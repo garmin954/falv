@@ -1,0 +1,193 @@
+﻿.center {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px
+}
+
+.center span {
+    display: block;
+    text-align: center
+}
+
+.center span i {
+    font-family: Akrobat
+}
+
+.center span:first-child i {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d0ab6e;
+    font-family: Akrobat
+}
+
+.center span:last-child {
+    font-size: 50px;
+    color: #d0ab6e;
+    font-weight: 700
+}
+
+.blackArea {
+    width: 1200px;
+    padding-top: 30px;
+    border-radius: 10px;
+    height: 480px;
+    margin: 100px auto 0;
+    background: url(../images/card.png) no-repeat 50%
+}
+
+.blackArea div {
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 30px;
+    color: #d0ab6e
+}
+
+.blackArea div span {
+    margin-right: 30px;
+    float: left;
+    margin-left: 470px;
+    line-height: 26px
+}
+
+.blackArea div i {
+    font-size: 20px;
+    font-weight: 700
+}
+
+.blackArea div i em {
+    font-weight: 400;
+    font-size: 14px
+}
+
+.blackArea div input {
+    width: 161px;
+    height: 38px;
+    color: #d0ab6e;
+    outline: none;
+    font-size: 20px;
+    vertical-align: middle;
+    background: rgba(197, 173, 125, 0);
+    border: 2px solid #c5ad7d;
+    padding: 0 10px
+}
+
+.blackArea div input::-webkit-input-placeholder {
+    color: #666;
+    font-size: 13px
+}
+
+.blackArea div input::-moz-placeholder {
+    color: #666;
+    font-size: 13px
+}
+
+.blackArea div input:-ms-input-placeholder {
+    color: #666;
+    font-size: 13px
+}
+
+.blackArea div:nth-child(6) {
+    height: 38px
+}
+
+.blackArea div:nth-child(6) span {
+    line-height: 38px
+}
+
+.blackArea div:last-child {
+    text-align: center
+}
+
+.blackArea a {
+    display: block;
+    width: 248px;
+    height: 48px;
+    line-height: 48px;
+    background: #caac76;
+    border-radius: 4px;
+    color: #24232c;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px auto 15px
+}
+
+dialogme .el-dialog {
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+dialogme .el-dialog__header {
+    background: #0f1a35;
+    height: 60px
+}
+
+dialogme .el-dialog__header .el-dialog__title {
+    color: #caac76;
+    font-size: 16px
+}
+
+dialogme .el-dialog__body {
+    background: #fff;
+    padding: 30px;
+    height: 400px;
+    overflow-y: scroll
+}
+
+dialogme .el-dialog__body img {
+    width: 80%;
+    margin: 0 auto;
+    display: block
+}
+
+dialogme .el-dialog__body + div {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 0;
+    cursor: pointer
+}
+
+dialogme .el-dialog__body + div div {
+    color: #caac76;
+    line-height: 55px
+}
+
+dialogme .el-dialog__headerbtn .el-dialog__close {
+    color: #caac76
+}
+
+dialogme .txt .title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0
+}
+
+dialogme .txt h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+dialogme .txt h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700
+}
+
+dialogme .txt p {
+    font-size: 12px;
+    color: #333;
+    line-height: 22px;
+    margin-bottom: 5px
+}
+
+dialogme .txt p span {
+    font-weight: 700
+}

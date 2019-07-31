@@ -1,0 +1,622 @@
+﻿.packageName {
+    font-size: 14px
+}
+
+.tableBox .numStyle .cell {
+    font-family: Akrobat;
+    font-size: 16px;
+    letter-spacing: 2px
+}
+
+.accountInfo {
+    height: 110px;
+    position: relative
+}
+
+.accountInfo .left {
+    float: left;
+    width: 450px
+}
+
+.accountInfo .left div {
+    float: left;
+    margin-left: 30px;
+    line-height: 110px
+}
+
+.accountInfo .left div + div {
+    margin-left: 40px
+}
+
+.accountInfo .left div img {
+    vertical-align: middle;
+    width: 26px;
+    height: 26px
+}
+
+.accountInfo .left div.person img, .accountInfo .left div img.vipbefore + img {
+    display: none
+}
+
+.accountInfo .left div span {
+    margin-left: 5px
+}
+
+.accountInfo .left .viplook {
+    display: none
+}
+
+.accountInfo .right {
+    width: 580px;
+    position: absolute;
+    right: 0;
+    float: right;
+    height: inherit;
+    background: #f6f6f6;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.accountInfo .right:before {
+    content: " ";
+    display: inline-block;
+    background: #fff;
+    height: 140px;
+    width: 50px;
+    -webkit-transform: rotate(195deg);
+    -ms-transform: rotate(195deg);
+    transform: rotate(195deg);
+    position: absolute;
+    left: -37px;
+    top: -10px
+}
+
+.accountInfo .right > img {
+    width: 68px;
+    height: 34px;
+    margin-left: 53px;
+    margin-top: 38px
+}
+
+.accountInfo .right .introduce {
+    margin-left: 19px;
+    padding: 29px 0 30px;
+    color: #092b6d
+}
+
+.accountInfo .right .introduce span {
+    display: block
+}
+
+.accountInfo .right .introduce span:first-child {
+    font-size: 20px
+}
+
+.accountInfo .right .look {
+    line-height: 110px;
+    color: #092b6d;
+    margin-left: 46px
+}
+
+.accountInfo .right .look a {
+    color: #092b6d;
+    font-size: 14px
+}
+
+.accountInfo.vip {
+    background: #f8f8f8;
+    color: #092b6d
+}
+
+.accountInfo.vip .left {
+    width: 100%
+}
+
+.accountInfo.vip .left .person img {
+    display: inline-block;
+    width: 68px;
+    height: 34px
+}
+
+.accountInfo.vip .left .viplook {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    line-height: 110px;
+    color: #092b6d
+}
+
+.accountInfo.vip .left .viplook a {
+    color: #092b6d;
+    font-size: 14px
+}
+
+.accountInfo.vip .right {
+    display: none
+}
+
+.my_head {
+    height: 60px;
+    color: #333;
+    font-size: 16px;
+    background: #f6faff;
+    border-bottom: 1px solid #ddd
+}
+
+.my_head p {
+    float: left;
+    width: 64px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 29px
+}
+
+.my_head .my_onsultation {
+    float: right;
+    margin-right: 39px;
+    width: 95px;
+    height: 60px;
+    line-height: 60px;
+    color: #1972ea
+}
+
+.my_head .my_onsultation i {
+    float: left;
+    margin-top: 20px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../fonts/7bdeee3cba9c49399f867c588539dfcc.svg)
+}
+
+.rightStep .el-step__icon-inner {
+    display: none
+}
+
+.rightStep .el-step__head.is-process .el-step__icon {
+    background: url(../fonts/circle_underway.svg)
+}
+
+.rightStep .el-step__head.is-wait .el-step__icon {
+    background: url(../fonts/circle.svg)
+}
+
+.rightStep .el-step__line {
+    background-color: #ddd;
+    width: 60px;
+    left: 68%
+}
+
+.rightStep .el-steps--horizontal {
+    margin-left: 120px
+}
+
+.rightStep .el-step.is-center .el-step__head {
+    width: 115px
+}
+
+.rightStep .el-step.is-center .el-step__line {
+    left: 74%
+}
+
+.el-popover {
+    width: 350px;
+    padding: 20px;
+    line-height: 1.8
+}
+
+.el-popover p {
+    font-size: 14px;
+    color: #333
+}
+
+.accountBox .el-tabs__item {
+    padding: 0 30px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400
+}
+
+.accountBox .el-tabs__active-bar {
+    height: 4px;
+    background-color: #1972ea;
+    color: #1972ea
+}
+
+.accountBox .el-tabs__item.is-active, .accountBox .el-tabs__item:hover {
+    color: #1972ea
+}
+
+.accountBox .el-tabs__nav-wrap:after {
+    background-color: #ddd;
+    height: 1px
+}
+
+.accountBox .el-tabs__header {
+    margin: 0
+}
+
+.packageName[data-v-2f1194b4] {
+    font-size: 14px
+}
+
+.detailStep[data-v-2f1194b4] {
+    padding: 0 30px
+}
+
+.leftStep[data-v-2f1194b4] {
+    margin-top: 30px;
+    float: left;
+    width: 192px;
+    height: 90px;
+    border-right: 1px solid #ddd
+}
+
+.leftStep p[data-v-2f1194b4] {
+    text-align: center;
+    width: 120px;
+    font-size: 24px;
+    color: #333
+}
+
+.leftStep p[data-v-2f1194b4]:first-child {
+    margin-bottom: 30px;
+    margin-top: 10px
+}
+
+.leftStep p[data-v-2f1194b4]:last-child {
+    font-size: 14px;
+    color: #666
+}
+
+.leftStep button[data-v-2f1194b4] {
+    font-size: 16px;
+    width: 120px;
+    height: 42px;
+    background: #eb3232;
+    color: #fff;
+    margin-left: 0;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer
+}
+
+.leftStep .payEd[data-v-2f1194b4] {
+    margin: 0;
+    line-height: 90px
+}
+
+.rightStep[data-v-2f1194b4] {
+    float: left;
+    width: 400px;
+    padding: 60px 0
+}
+
+.orderDetail > p[data-v-2f1194b4] {
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    padding-right: 70px;
+    margin-bottom: 15px
+}
+
+.orderDetail > p span[data-v-2f1194b4] {
+    font-size: 16px;
+    color: #eb3232
+}
+
+.orderDetail > p[data-v-2f1194b4]:last-child {
+    border-top: 1px solid #ddd;
+    margin: 0 30px;
+    padding-right: 40px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px
+}
+
+.orderTitle[data-v-2f1194b4] {
+    border: 1px solid #ddd;
+    border-bottom: none;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    margin: 0 30px;
+    position: relative;
+    top: 1px
+}
+
+.orderTitle span[data-v-2f1194b4] {
+    float: left;
+    margin-right: 50px;
+    font-size: 14px;
+    color: #666
+}
+
+.orderTitle span i[data-v-2f1194b4] {
+    color: #333
+}
+
+.rightStep[data-v-2f1194b4] .el-step:last-child .el-step__main {
+    width: 115px
+}
+
+.tableBox .el-table--border[data-v-2f1194b4] {
+    border: 1px solid #ddd
+}
+
+.title[data-v-774add6a] {
+    margin-left: 70px;
+    margin-right: 30px;
+    border-bottom: 1px solid #ddd;
+    line-height: 50px
+}
+
+.title span[data-v-774add6a] {
+    color: #666;
+    font-size: 14px;
+    margin-right: 210px
+}
+
+.title span[data-v-774add6a]:nth-child(2n) {
+    margin-right: 245px
+}
+
+.processing[data-v-774add6a] {
+    padding-left: 30px
+}
+
+.processing p[data-v-774add6a] {
+    margin: 33px 0
+}
+
+.processing p span[data-v-774add6a] {
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    width: 305px;
+    text-align: left
+}
+
+.processing p span img[data-v-774add6a] {
+    margin-right: 15px;
+    vertical-align: middle
+}
+
+.service_list_details .list_details_title[data-v-774add6a] {
+    height: 60px;
+    color: #333;
+    font-size: 16px;
+    background: #f6faff;
+    border-bottom: 1px solid #ddd
+}
+
+.service_list_details .list_details_title p[data-v-774add6a] {
+    float: left;
+    width: 64px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 29px
+}
+
+.track_title[data-v-774add6a] {
+    height: 60px;
+    color: #333;
+    font-size: 16px;
+    background: #f6faff;
+    border-bottom: 1px solid #ddd
+}
+
+.track_title p[data-v-774add6a] {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 29px
+}
+
+.track_title .onsultation[data-v-774add6a] {
+    float: right;
+    margin-right: 39px;
+    width: 95px;
+    height: 60px;
+    line-height: 60px;
+    color: #1972ea
+}
+
+.track_title .onsultation i[data-v-774add6a] {
+    float: left;
+    margin-top: 20px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/message.png)
+}
+
+.track_title .onsultation span[data-v-774add6a] {
+    float: right
+}
+
+.service_tracking .track_process .track_process_title ul[data-v-774add6a] {
+    line-height: 52px;
+    margin-left: 69px;
+    border-bottom: 1px solid #ddd
+}
+
+.service_tracking .track_process .track_process_title ul li[data-v-774add6a] {
+    float: left
+}
+
+.service_tracking .track_process .track_process_title ul li[data-v-774add6a]:nth-child(2) {
+    margin: 0 137px 0 210px
+}
+
+.service_tracking .track_process .process_information_box ul[data-v-774add6a] {
+    margin-top: 30px
+}
+
+.service_tracking .track_process .process_information_box ul li[data-v-774add6a] {
+    height: 52px;
+    margin-left: 30px
+}
+
+.service_tracking .track_process .process_information_box ul li div[data-v-774add6a] {
+    float: left;
+    margin-right: 25px;
+    width: 18px;
+    height: 52px;
+    position: relative
+}
+
+.service_tracking .track_process .process_information_box ul li div span[data-v-774add6a] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 22% 0 0 9%;
+    border-radius: 50%
+}
+
+.service_tracking .track_process .process_information_box ul li div span img[data-v-774add6a] {
+    width: 100%;
+    height: 100%
+}
+
+.service_tracking .track_process .process_information_box ul li div i[data-v-774add6a] {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd
+}
+
+.service_tracking .track_process .process_information_box ul li span[data-v-774add6a] {
+    float: left;
+    font-size: 14px;
+    color: #666
+}
+
+.service_tracking .track_process .process_information_box ul li span[data-v-774add6a]:nth-child(2) {
+    display: inline-block
+}
+
+.service_tracking .track_process .process_information_box ul li span[data-v-774add6a]:nth-child(3) {
+    margin: 0 123px 0 160px
+}
+
+.service_tracking .track_process .process_information_box ul li[data-v-774add6a]:first-child {
+    height: 52px;
+    margin-left: 30px
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child div[data-v-774add6a] {
+    float: left;
+    margin-right: 25px;
+    width: 18px;
+    height: 52px;
+    position: relative
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child div span[data-v-774add6a] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 18% 0 0 8%;
+    border-radius: 50%
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child div span img[data-v-774add6a] {
+    width: 100%;
+    height: 100%
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child div i[data-v-774add6a] {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child span[data-v-774add6a] {
+    float: left;
+    font-size: 16px;
+    color: #333
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child span[data-v-774add6a]:nth-child(2) {
+    display: inline-block;
+    font-size: 18px
+}
+
+.service_tracking .track_process .process_information_box ul li:first-child span[data-v-774add6a]:nth-child(3) {
+    margin: 0 111px 0 123px
+}
+
+.service_tracking .track_process .process_information_box ul li:last-child div i[data-v-774add6a] {
+    display: none
+}
+
+.process_information .is-i[data-v-774add6a] {
+    color: #999;
+    font-size: 14px
+}
+
+.process_information div[data-v-774add6a] {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.process_information div i[data-v-774add6a] {
+    margin-left: 30px
+}
+
+.process_information div span[data-v-774add6a] {
+    margin-left: 10px;
+    color: #1972ea;
+    font-size: 18px
+}
+
+.process_information div[data-v-774add6a]:last-child {
+    margin-top: 0
+}
+
+.process_information div:last-child span[data-v-774add6a] {
+    color: #333;
+    font-size: 14px
+}
+
+.process_information ul li[data-v-774add6a] {
+    height: 52px;
+    float: left;
+    margin: 0 29.5px
+}
+
+.process_information ul li span[data-v-774add6a] {
+    margin-left: 10px;
+    color: #333;
+    font-size: 16px
+}
+
+.process_information ul li[data-v-774add6a]:first-child {
+    margin-left: 30px
+}
+
+.process_information ul li:nth-child(2) span[data-v-774add6a] {
+    color: #333;
+    font-size: 16px
+}
+
+.service_tracking[data-v-774add6a] .el-table__header-wrapper {
+    margin-left: 70px
+}
+
+.service_tracking[data-v-774add6a] .el-table__body {
+    margin-left: 30px
+}

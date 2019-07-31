@@ -1,0 +1,301 @@
+﻿.memberBox {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.left {
+    width: 140px;
+    background: #fff;
+    padding-top: 30px;
+    -webkit-box-shadow: 0 4px 30px 0 rgba(36, 35, 44, .1);
+    box-shadow: 0 4px 30px 0 rgba(36, 35, 44, .1);
+    border-radius: 6px
+}
+
+.left a {
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 30px
+}
+
+.left span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    position: relative
+}
+
+.left .light {
+    color: #caac76
+}
+
+.left .light:before {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 47px;
+    height: 4px;
+    background: #caac76;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.right {
+    width: 1050px;
+    padding: 40px;
+    margin-left: 10px;
+    background: #fff;
+    border-radius: 10px
+}
+
+.top {
+    color: #fff;
+    text-align: left;
+    width: 100px;
+    margin: auto
+}
+
+.top span {
+    display: block
+}
+
+.center {
+    width: 1200px;
+    margin: 0 auto 70px;
+    text-align: center;
+    padding-top: 15px
+}
+
+.center span {
+    display: block;
+    text-align: center
+}
+
+.center span i {
+    font-family: Akrobat
+}
+
+.center span:first-child i {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d0ab6e;
+    font-family: Akrobat
+}
+
+.center span:last-child {
+    font-size: 50px;
+    color: #d0ab6e;
+    font-weight: 700
+}
+
+.paraList h3[data-v-b45942e8] {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #caac76;
+    font-weight: 700
+}
+
+.paraList h3 img[data-v-b45942e8] {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: -5px;
+    vertical-align: middle
+}
+
+.paraList h3 span[data-v-b45942e8] {
+    vertical-align: middle
+}
+
+.paraList p[data-v-b45942e8] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.paraList[data-v-b45942e8]:first-child {
+    margin-bottom: 45px
+}
+
+.qaList p[data-v-b45942e8] {
+    font-weight: 700
+}
+
+.paraList h3[data-v-33a74008] {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #caac76;
+    font-weight: 700
+}
+
+.paraList h3 img[data-v-33a74008] {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: -5px;
+    vertical-align: middle
+}
+
+.paraList h3 span[data-v-33a74008] {
+    vertical-align: middle
+}
+
+.paraList p[data-v-33a74008] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.paraList[data-v-33a74008]:first-child {
+    margin-bottom: 45px
+}
+
+.qaList p[data-v-33a74008] {
+    font-weight: 700
+}
+
+.paraList h3[data-v-44b311ce] {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #caac76;
+    font-weight: 700
+}
+
+.paraList h3 img[data-v-44b311ce] {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: -5px;
+    vertical-align: middle
+}
+
+.paraList h3 span[data-v-44b311ce] {
+    vertical-align: middle
+}
+
+.paraList p[data-v-44b311ce] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.paraList[data-v-44b311ce]:first-child {
+    margin-bottom: 45px
+}
+
+.qaList p[data-v-44b311ce] {
+    font-weight: 700
+}
+
+.paraList h3[data-v-501cf96c] {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #caac76;
+    font-weight: 700
+}
+
+.paraList h3 img[data-v-501cf96c] {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: -5px;
+    vertical-align: middle
+}
+
+.paraList h3 span[data-v-501cf96c] {
+    vertical-align: middle
+}
+
+.paraList p[data-v-501cf96c] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.paraList[data-v-501cf96c]:first-child {
+    margin-bottom: 45px
+}
+
+.qaList p[data-v-501cf96c] {
+    font-weight: 700
+}
+
+.paraList h3[data-v-cdbc2c12] {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #caac76;
+    font-weight: 700
+}
+
+.paraList h3 img[data-v-cdbc2c12] {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: -5px;
+    vertical-align: middle
+}
+
+.paraList h3 span[data-v-cdbc2c12] {
+    vertical-align: middle
+}
+
+.paraList p[data-v-cdbc2c12] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.paraList[data-v-cdbc2c12]:first-child {
+    margin-bottom: 45px
+}
+
+.qaList p[data-v-cdbc2c12] {
+    font-weight: 700
+}
+
+.paraList h3[data-v-ea1fb762] {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #caac76;
+    font-weight: 700
+}
+
+.paraList h3 img[data-v-ea1fb762] {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: -5px;
+    vertical-align: middle
+}
+
+.paraList h3 span[data-v-ea1fb762] {
+    vertical-align: middle
+}
+
+.paraList p[data-v-ea1fb762] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.paraList[data-v-ea1fb762]:first-child {
+    margin-bottom: 45px
+}
+
+.qaList p[data-v-ea1fb762] {
+    font-weight: 700
+}

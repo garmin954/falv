@@ -1,0 +1,66 @@
+﻿.center {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px
+}
+
+.center span {
+    display: block;
+    text-align: center
+}
+
+.center span i {
+    font-family: Akrobat
+}
+
+.center span:first-child i {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d0ab6e;
+    font-family: Akrobat
+}
+
+.center span:last-child {
+    font-size: 50px;
+    color: #d0ab6e;
+    font-weight: 700
+}
+
+.blackArea {
+    width: 1040px;
+    text-align: center;
+    padding-left: 36px;
+    padding-top: 30px;
+    border-radius: 10px;
+    height: 310px;
+    margin: 100px auto 0;
+    background: url(../images/card_zhifu.png) no-repeat 50%
+}
+
+.blackArea span {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: #d0ab6e
+}
+
+.blackArea span:nth-child(2) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px auto 35px;
+    font-weight: 700
+}
+
+.blackArea a {
+    display: block;
+    width: 248px;
+    height: 48px;
+    line-height: 48px;
+    background: #caac76;
+    border-radius: 4px;
+    color: #24232c;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px auto 0
+}
