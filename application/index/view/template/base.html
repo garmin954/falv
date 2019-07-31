@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{$config['web_name']}</title>
+    <meta name="keywords" content="{$config['keywords']}">
+    <meta name="description" content=" {$config['description']}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="STATIC/css/index.css">
+    <link rel="stylesheet" href="STATIC/css/22.css">
+    <link rel="stylesheet" href="STATIC/css/23.css">
+    <link rel="stylesheet" href="STATIC/css/24.css">
+    <link rel="stylesheet" href="STATIC/css/25.css">
+    <link rel="stylesheet" href="STATIC/css/app.css">
+    <link rel="stylesheet" href="STATIC/css/class.css">
+    <link rel="stylesheet" href="STATIC/css/detail.css">
+    <link rel="stylesheet" href="STATIC/css/guide.css">
+    <link rel="stylesheet" href="STATIC/css/htmlsta.css">
+    <link rel="stylesheet" href="STATIC/css/leftnav.css">
+    <link rel="stylesheet" href="STATIC/css/leftnavf.css">
+    <link rel="stylesheet" href="STATIC/css/mainindex.css">
+    <link rel="stylesheet" href="STATIC/css/page.css">
+    <link rel="stylesheet" href="STATIC/css/pay.css">
+    <link rel="stylesheet" href="STATIC/css/vip.css">
+    <script src="./STATIC/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+
+            var browser = navigator.userAgent.toLowerCase();
+
+            var isMobile = false;
+
+            for (var i=0; i<mobileAgent.length; i++){ if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true;
+
+                location.href = '/wap';
+
+                break; } }
+        })
+
+    </script>
+    {block name="link"}
+
+    {/block}
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #FFFFFF;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .rightBanner .box, .box1 {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin: 0 auto 5% auto;
+        }
+
+        .rightBanner .box {
+            max-width: 1000px; /***   这里的max-width值就是图片的宽度，暂不支持百分比   ***/
+            max-height: 480px;
+        }
+
+        .rightBanner .box1 {
+            max-width: 1000px; /***   这里的max-width值就是图片的宽度，暂不支持百分比   ***/
+            max-height: 480px;
+
+        }
+
+        .rightBanner li {
+            float: left;
+            list-style: none;
+        }
+
+        .rightBanner ol {
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .rightBanner ol li {
+            cursor: pointer;
+            position: relative;
+            margin-left: 15px;
+            display: inline;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: gainsboro;
+        }
+
+        .rightBanner ol .action {
+            background-color: #de6e6a;
+        }
+
+        .rightBannerol li:hover {
+            background-color: #DE6E6A;
+        }
+
+        .rightBanner ul {
+            position: relative;
+            left: 0;
+        }
+
+        .rightBanner .next {
+            cursor: pointer;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            background: url("STATIC/images/next.png");
+            width: 50px;
+            height: 45px;
+            display: block;
+            line-height: 80px;
+        }
+
+        .rightBanner .prev {
+            cursor: pointer;
+            opacity: 0;
+            background: url("STATIC/images/prev.png");
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 45px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .rightBanner .prev, .next {
+            transition: all 0.5s;
+        }
+
+        .rightBanner .next:hover, .prev:hover {
+            -webkit-transform: scale(1.2, 1.2);
+            -moz-transform: scale(1.2, 1.2);
+            -ms-transform: scale(1.2, 1.2);
+            -o-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+            opacity: 1 !important;
+            transition: all 0.3s;
+        }
+        .isleftBanner[data-v-452e9b93]{
+            display: block;!important;
+        }
+    </style>
+
+</head>
+<body>
+<div id="app" data-server-rendered="true" data-v-3e67e07a>
+    <div class="tempBox container" style="padding: 0px"  >
+
+        {include file="template/header"}
+        {block name="content"}
+
+        {/block}
+
+    </div>
+</div>
+
+{include file="template/footer"}
+<script src="STATIC/js/714972bdfdaed9df48923e4e9ec69dea.js" defer></script>
+<script src="STATIC/js/manifest.js" defer></script>
+<script src="STATIC/js/mainindex.js" defer></script>
+<script src="STATIC/js/vendor.js" defer></script>
+<script src="STATIC/js/babel-polyfill.js" defer></script>
+
+{block name="script"}
+
+{/block}
+</body>
+
+
+</html>

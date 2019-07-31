@@ -1,0 +1,69 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:51:"F:\WWW\qiye1/./application/index\view\wap\info.html";i:1560526311;}*/ ?>
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 40px;">
+<head>
+    <meta charset="utf-8">
+    <title>北京企业经营范围变更-2019最新代办费用-流程-北京小微律政</title>
+    <meta name="keywords" content="北京企业经营范围变更,2019最新北京企业经营范围变更代办费用,北京企业经营范围变更办理流程">
+    <meta name="description" content="北京小微律政:专业的北京企业经营范围变更代理公司.想了解2019最新北京企业经营范围变更代办费用及北京企业经营范围变更办理流程,就上小微律政!">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+
+    <meta name="baidu-site-verification" content="i59Md7ihDX"/>
+    <meta name="sogou_site_verification" content="Pe9SOUzMpQ"/>
+    <meta name="360-site-verification" content="c473a1932ddc3c26ec756d8e6aaa92f7"/>
+
+
+
+    <link rel="stylesheet" href="/public/static/wap/css/app.8dfd7e291924f1923fee.css">
+    <link rel="stylesheet" href="/public/static/wap/css/backgroundorder.26b79e2b3dba9fecabb6.css">
+    <link rel="stylesheet" href="/public/static/wap/css/class.d7410f9adcc57a178541.css">
+    <link rel="stylesheet" href="/public/static/wap/css/detail.191e7be954f8f52b7450.css">
+    <link rel="stylesheet" href="/public/static/wap/css/mainindex.a702f1c4cd17b1bbac5b.css">
+    <link rel="stylesheet" href="/public/static/wap/css/styles.f702d947a4392eb2ccc5.css">
+    <link rel="stylesheet" href="/public/static/wap/css/vendor.2be86f0617f7cd527277.css">
+    <link rel="stylesheet" href="/public/static/wap/css/vip.c87a6c9cd2e430243254.css">
+</head>
+<script src="/public/static/wap/js/0a7dc45a2cb4458c992da33a11ffdf16.js"></script>
+<script type="text/javascript" src="/public/static/wap/js/jweixin-1.3.2.js"></script>
+<body>
+
+<div id="app" data-server-rendered="true" data-v-ed68ccda>
+    <div id="detail" data-v-90cea5f6 data-v-ed68ccda>
+        <header class="titleBox mint-header is-fixed" data-v-77b08f5f data-v-90cea5f6>
+            <h3 style="text-align: center;width: 100%">小微律政-公司注册</h3>
+        </header>
+        <img id="top" src="/public/<?php echo $info['thumb']; ?>"  alt="<?php echo $info['title']; ?>" class="shopimg" data-v-90cea5f6>
+        <section style="margin-bottom: 50px" class="main" data-v-90cea5f6>
+            <h1 data-v-90cea5f6><?php echo $info['title']; ?></h1>
+            <p class="desc" data-v-90cea5f6><?php echo $config['web_name']; ?>，让创业更简单！</p>
+            <div class="price" data-v-90cea5f6><i data-v-90cea5f6></i>面议 <?php echo $config['contact_mobile']; ?></div>
+
+        </section>
+
+        <footer style="z-index:3; " data-v-90cea5f6>
+            <button class="immBuy" onclick="window.history.go(-1)" data-v-90cea5f6>
+                返回上一页
+            </button>
+        </footer>
+    </div>
+</div>
+<script src="/public/static/wap/js/manifest.fdc37cc515bf6f04e0a9.js" defer></script>
+<script src="/public/static/wap/js/detail.fdc37cc515bf6f04e0a9.js" defer></script>
+<script src="/public/static/wap/js/vendor.fdc37cc515bf6f04e0a9.js" defer></script>
+<script src="/public/static/wap/js/styles.fdc37cc515bf6f04e0a9.js" defer></script>
+<script src="/public/static/wap/js/babel-polyfill.fdc37cc515bf6f04e0a9.js" defer></script>
+</body>
+
+</html>

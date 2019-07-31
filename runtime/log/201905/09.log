@@ -1,0 +1,2820 @@
+---------------------------------------------------------------
+[ 2019-05-09T16:24:54+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.045933s] [吞吐率：21.77req/s] [内存消耗：5,350.60kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002021s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000266s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:24:58+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/add.html
+[运行时间：0.036301s] [吞吐率：27.55req/s] [内存消耗：5,296.73kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001404s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000201s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/add.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` WHERE  `status` = 1 [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:25:44+08:00 ] 115.239.212.193 GET www.jisitech.com/article/10.html
+[运行时间：0.050425s] [吞吐率：19.83req/s] [内存消耗：2,766.57kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002064s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.jisitech.com',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'referer' => 'http://www.baidu.com/s?wd=adultkl9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/article/10_html' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000259s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000507s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '115.239.212.193'  AND `type` = 'pc'  AND `client` = 'Firefox'  AND `time` > 1557389444 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('115.239.212.193' , 1557390344 , 'Firefox' , 'pc') [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557331200 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=29,`pc`=19,`mobile`=10  WHERE  `time` >= 1557331200 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '115.239.212.193'  AND `type` = 'pc'  AND `client` = 'Firefox'  AND `time` > 1557389444 LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:25:44+08:00 ] 115.239.212.193 GET www.jisitech.com/article/css/language-selector.css
+[运行时间：0.040695s] [吞吐率：24.57req/s] [内存消耗：2,752.71kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001584s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.jisitech.com',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hk',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
+  'referer' => 'http://www.jisitech.com/article/10.html',
+  'accept' => 'text/css,*/*;q=0.1',
+)
+[ info ] [ PARAM ] array (
+  '/article/css/language-selector_css' => '',
+  'id' => 'css',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000194s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '115.239.212.193'  AND `type` = 'pc'  AND `client` = 'Firefox'  AND `time` > 1557389444 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '115.239.212.193'  AND `type` = 'pc'  AND `client` = 'Firefox'  AND `time` > 1557389444 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:25:44+08:00 ] 115.239.212.195 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.022373s] [吞吐率：44.70req/s] [内存消耗：1,549.58kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002504s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.jisitech.com',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'think_var=zh-hk',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
+  'referer' => 'http://www.jisitech.com/article/10.html',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T16:25:56+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/add.html
+[运行时间：0.037724s] [吞吐率：26.51req/s] [内存消耗：5,200.57kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001472s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/add.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.jisitech.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '97',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+  'cname' => '核价标题1',
+  'ename' => 'hexin1',
+  'type' => '1',
+  'type_id' => '3',
+  'value' => '',
+  'values' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000207s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] INSERT INTO `tp_system` (`cname` , `ename` , `type` , `type_id` , `value` , `values` , `status` , `time`) VALUES ('核价标题1' , 'hexin1' , 1 , 3 , '' , '' , 1 , 1557390356) [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:25:58+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/add.html
+[运行时间：0.038510s] [吞吐率：25.97req/s] [内存消耗：5,296.73kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001436s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000205s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/add.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` WHERE  `status` = 1 [ RunTime:0.000228s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:26:22+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/add.html
+[运行时间：0.044450s] [吞吐率：22.50req/s] [内存消耗：5,200.57kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002214s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/add.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.jisitech.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '98',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+  'cname' => '核价描述1',
+  'ename' => 'hexinm1',
+  'type' => '6',
+  'type_id' => '1',
+  'value' => '',
+  'values' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000251s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001084s ]
+[ sql ] [ SQL ] INSERT INTO `tp_system` (`cname` , `ename` , `type` , `type_id` , `value` , `values` , `status` , `time`) VALUES ('核价描述1' , 'hexinm1' , 6 , 1 , '' , '' , 1 , 1557390382) [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:26:24+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/add.html
+[运行时间：0.038950s] [吞吐率：25.67req/s] [内存消耗：5,296.73kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001402s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000207s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/add.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.001708s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` WHERE  `status` = 1 [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:26:48+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/add.html
+[运行时间：0.046352s] [吞吐率：21.57req/s] [内存消耗：5,200.61kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002164s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/add.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.jisitech.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '100',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+  'cname' => '核价图片1',
+  'ename' => 'hexinimg1',
+  'type' => '7',
+  'type_id' => '3',
+  'value' => '',
+  'values' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000205s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] INSERT INTO `tp_system` (`cname` , `ename` , `type` , `type_id` , `value` , `values` , `status` , `time`) VALUES ('核价图片1' , 'hexinimg1' , 7 , 3 , '' , '' , 1 , 1557390408) [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:26:51+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.047121s] [吞吐率：21.22req/s] [内存消耗：5,353.99kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001700s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000277s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:26:51+08:00 ] 113.246.174.151 GET www.jisitech.com/public//
+[运行时间：0.051740s] [吞吐率：19.33req/s] [内存消耗：2,854.81kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/public/../application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000234s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/public/../application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.246.174.151'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557389511 LIMIT 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.246.174.151'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557389511 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000323s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:28:45+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.044203s] [吞吐率：22.62req/s] [内存消耗：5,360.61kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001907s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000224s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:28:45+08:00 ] 113.246.174.151 GET www.jisitech.com/public//
+[运行时间：0.035757s] [吞吐率：27.97req/s] [内存消耗：2,855.02kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001643s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/public/../application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000200s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/public/../application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.246.174.151'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557389625 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.246.174.151'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557389625 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:20+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/upimg.html
+[运行时间：0.041172s] [吞吐率：24.29req/s] [内存消耗：5,240.94kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001492s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'upimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://www.jisitech.com',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypkTARaN0KqrkfCyr',
+  'content-length' => '6944',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/upimg_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000223s ]
+[ info ] [ RUN ] app\admin\Controller\System->upimg[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/upimg' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/ee5087bc33ebe87a4d77f8fc1e130bfb.jpg'  WHERE  `ename` = 'website_logo' [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:23+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/upimg.html
+[运行时间：0.038743s] [吞吐率：25.81req/s] [内存消耗：5,240.94kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001415s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'upimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://www.jisitech.com',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryemmtWvrvAynBtCC3',
+  'content-length' => '6408',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/upimg_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000203s ]
+[ info ] [ RUN ] app\admin\Controller\System->upimg[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/upimg' LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/42e4327fc15aba5d3d33f51b94fe8dd4.jpg'  WHERE  `ename` = 'website_logo' [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:26+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/upimg.html
+[运行时间：0.057017s] [吞吐率：17.54req/s] [内存消耗：5,240.94kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001974s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'upimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://www.jisitech.com',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryGcWS8WBHv1m4TOt4',
+  'content-length' => '6944',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/upimg_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000245s ]
+[ info ] [ RUN ] app\admin\Controller\System->upimg[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.004782s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/upimg' LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/e2321c1970fdb29f571db14c0fde52ad.jpg'  WHERE  `ename` = 'website_logo' [ RunTime:0.000418s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:27+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/system/page.html
+[运行时间：0.062930s] [吞吐率：15.89req/s] [内存消耗：5,249.29kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002133s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.jisitech.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5971',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+  'web_name' => '集思科技',
+  'description' => '1',
+  'keywords' => 'PCB抄板,PCB生产, 芯片解密, PCB Layout ,深圳PCB抄板，原理图反推，样机制作，PCB改板 BOM清单制作，样机调试，线路板抄板 单片机解密，加密芯片破解，',
+  'logo' => '/uploads/system/20190506/d9061ebc29aa26fbb88837e3b4e64c2b.jpg',
+  'tell' => '+86-0755-82956260',
+  'gsdesc' => '北京上云科技发展有限公司，是专注于高端定制的北京网站设计公司<br/>         具有20年建站经验的北京网页设计公司，最早注重响应式网站建设的北京网站建设公司',
+  'address' => '广东省深圳市',
+  'webinfo' => 'Copyright © 1feel.com 1998-2019,All Rights Reserved 京ICP备140551号         京公网安备110105015392',
+  'gsjs' => ' 深圳集思科技有限公司是一家专业从PCB线路板集设计,芯片解密，抄板,PCB生产,SMT加工于一体的高科技企业,位于亚洲最大的电子产品及电子元器件采购中心华强北中心区。公司专业从事高速电路PCB Layout ,PCB抄板,多层高精密PCB板抄板、改板、样机调试工作.可为客户提供从IC解密(限合法)——抄板——原理图反推——BOM制作——PCBA生产直到成品的一站式服务',
+  'gsjsimg' => '/uploads/system/20190423\\53e7f6fc0bf8af694c4e42bc24991dcd.jpg',
+  'phone' => '136-6228-6682',
+  'contact' => '                    <p>业务电话： 0755-82956260 手机：13662286682  </p>                      <p>E-mail: dai@pcbxy.com QQ: 2052268 微信：13662286682</p>',
+  'beian' => '粤ICP备14031015号',
+  'erwm' => '/uploads/system/20190423\\f3ce381e084bcc3130928d14a57449e5.jpg',
+  'hexin1' => '1:1还原 100%成功',
+  'hexinm1' => '亿科迈科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，亿科迈科技都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。',
+  'hexinimg1' => '/uploads/system/20190509/ee5087bc33ebe87a4d77f8fc1e130bfb.jpg',
+  'hexinimg2' => '/uploads/system/20190509/42e4327fc15aba5d3d33f51b94fe8dd4.jpg',
+  'hexinm2' => '亿科迈科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，亿科迈科技都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。',
+  'hexin2' => '品质源于对细节的一丝不苟',
+  'hexin3' => '专业来自对流程的层层把控',
+  'hexinm3' => '亿科迈科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，亿科迈科技都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。',
+  'hexinimg3' => '/uploads/system/20190509/e2321c1970fdb29f571db14c0fde52ad.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000257s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='集思科技'  WHERE  `ename` = 'web_name' [ RunTime:0.000427s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='1'  WHERE  `ename` = 'description' [ RunTime:0.000403s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='PCB抄板,PCB生产, 芯片解密, PCB Layout ,深圳PCB抄板，原理图反推，样机制作，PCB改板 BOM清单制作，样机调试，线路板抄板 单片机解密，加密芯片破解，'  WHERE  `ename` = 'keywords' [ RunTime:0.000386s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190506/d9061ebc29aa26fbb88837e3b4e64c2b.jpg'  WHERE  `ename` = 'logo' [ RunTime:0.000390s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='+86-0755-82956260'  WHERE  `ename` = 'tell' [ RunTime:0.000375s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='北京上云科技发展有限公司，是专注于高端定制的北京网站设计公司<br/>         具有20年建站经验的北京网页设计公司，最早注重响应式网站建设的北京网站建设公司'  WHERE  `ename` = 'gsdesc' [ RunTime:0.000363s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='广东省深圳市'  WHERE  `ename` = 'address' [ RunTime:0.000376s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='Copyright © 1feel.com 1998-2019,All Rights Reserved 京ICP备140551号         京公网安备110105015392'  WHERE  `ename` = 'webinfo' [ RunTime:0.000369s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`=' 深圳集思科技有限公司是一家专业从PCB线路板集设计,芯片解密，抄板,PCB生产,SMT加工于一体的高科技企业,位于亚洲最大的电子产品及电子元器件采购中心华强北中心区。公司专业从事高速电路PCB Layout ,PCB抄板,多层高精密PCB板抄板、改板、样机调试工作.可为客户提供从IC解密(限合法)——抄板——原理图反推——BOM制作——PCBA生产直到成品的一站式服务'  WHERE  `ename` = 'gsjs' [ RunTime:0.000379s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190423\\53e7f6fc0bf8af694c4e42bc24991dcd.jpg'  WHERE  `ename` = 'gsjsimg' [ RunTime:0.000368s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='136-6228-6682'  WHERE  `ename` = 'phone' [ RunTime:0.000372s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='                    <p>业务电话： 0755-82956260 手机：13662286682  </p>                      <p>E-mail: dai@pcbxy.com QQ: 2052268 微信：13662286682</p>'  WHERE  `ename` = 'contact' [ RunTime:0.000380s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='粤ICP备14031015号'  WHERE  `ename` = 'beian' [ RunTime:0.000389s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190423\\f3ce381e084bcc3130928d14a57449e5.jpg'  WHERE  `ename` = 'erwm' [ RunTime:0.000371s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='1:1还原 100%成功'  WHERE  `ename` = 'hexin1' [ RunTime:0.000451s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='亿科迈科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，亿科迈科技都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。'  WHERE  `ename` = 'hexinm1' [ RunTime:0.000407s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/ee5087bc33ebe87a4d77f8fc1e130bfb.jpg'  WHERE  `ename` = 'hexinimg1' [ RunTime:0.000418s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/42e4327fc15aba5d3d33f51b94fe8dd4.jpg'  WHERE  `ename` = 'hexinimg2' [ RunTime:0.000404s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='亿科迈科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，亿科迈科技都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。'  WHERE  `ename` = 'hexinm2' [ RunTime:0.000432s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='品质源于对细节的一丝不苟'  WHERE  `ename` = 'hexin2' [ RunTime:0.000408s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='专业来自对流程的层层把控'  WHERE  `ename` = 'hexin3' [ RunTime:0.000436s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='亿科迈科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，亿科迈科技都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。'  WHERE  `ename` = 'hexinm3' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/e2321c1970fdb29f571db14c0fde52ad.jpg'  WHERE  `ename` = 'hexinimg3' [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:30+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.041545s] [吞吐率：24.07req/s] [内存消耗：5,361.70kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001538s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000219s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:51+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/add.html
+[运行时间：0.052587s] [吞吐率：19.02req/s] [内存消耗：5,296.73kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001999s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/add_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000259s ]
+[ info ] [ RUN ] app\admin\Controller\System->add[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/add.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/add' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` WHERE  `status` = 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:29:55+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/auth_rule/lst.html
+[运行时间：0.045417s] [吞吐率：22.02req/s] [内存消耗：5,431.23kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001669s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_rule',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/auth_rule/lst_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000211s ]
+[ info ] [ RUN ] app\admin\Controller\AuthRule->lst[ /www/wwwroot/www.jisitech.com/application/admin/controller/AuthRule.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/auth_rule/lst.html [ array (
+  0 => 'left_nav',
+  1 => 'rules',
+  2 => 'rule_top',
+  3 => 'lists',
+  4 => 'nums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000504s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'AuthRule/lst' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_auth_rule` LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT `title`,`id`,`pid` FROM `tp_auth_rule` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `title`,`id`,`pid` FROM `tp_auth_rule` WHERE  `pid` = 0 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:11+08:00 ] 113.246.174.151 POST www.jisitech.com/admin/Auth_rule/changestatus.html
+[运行时间：0.035399s] [吞吐率：28.25req/s] [内存消耗：5,185.43kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001507s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Auth_rule',
+    2 => 'changestatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/auth_rule/lst.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.jisitech.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Auth_rule/changestatus_html' => '',
+  'id' => '105',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000219s ]
+[ info ] [ RUN ] app\admin\Controller\AuthRule->changeStatus[ /www/wwwroot/www.jisitech.com/application/admin/controller/AuthRule.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'AuthRule/changestatus' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] UPDATE `tp_auth_rule`  SET `status`=1  WHERE  `id` = 105 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:12+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/index/index.html
+[运行时间：0.032277s] [吞吐率：30.98req/s] [内存消耗：2,754.24kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001872s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000177s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000898s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:12+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/index/welcome.html
+[运行时间：0.066592s] [吞吐率：15.02req/s] [内存消耗：2,967.34kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002107s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000177s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1557331200 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:13+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/index/welcome.html
+[运行时间：0.058949s] [吞吐率：16.96req/s] [内存消耗：2,966.59kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001468s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000178s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1557331200 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:14+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/lst.html
+[运行时间：0.061667s] [吞吐率：16.22req/s] [内存消耗：5,675.60kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001943s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/lst_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000287s ]
+[ info ] [ RUN ] app\admin\Controller\System->lst[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/lst.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+  2 => 'nums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000379s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/lst' LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_system` LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_system` LIMIT 1 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:20+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/lst.html?page=2
+[运行时间：0.041188s] [吞吐率：24.28req/s] [内存消耗：5,512.28kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001424s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/lst_html' => '',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000219s ]
+[ info ] [ RUN ] app\admin\Controller\System->lst[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/lst.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+  2 => 'nums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/lst' LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_system` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` ORDER BY `id` DESC LIMIT 8,8 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_system` LIMIT 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:21+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/lst.html?page=3
+[运行时间：0.040860s] [吞吐率：24.47req/s] [内存消耗：5,511.66kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001510s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/lst.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/lst_html' => '',
+  'page' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000202s ]
+[ info ] [ RUN ] app\admin\Controller\System->lst[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/lst.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+  2 => 'nums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/lst' LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_system` LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` ORDER BY `id` DESC LIMIT 16,8 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_system` LIMIT 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:30:24+08:00 ] 113.246.174.151 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.042837s] [吞吐率：23.34req/s] [内存消耗：5,362.39kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001526s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000225s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000251s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:33:12+08:00 ] 113.246.174.151 GET www.jisitech.com/
+[运行时间：0.038829s] [吞吐率：25.75req/s] [内存消耗：3,067.63kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001407s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/support',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000233s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000387s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.246.174.151'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557389892 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.246.174.151'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557389892 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:33:13+08:00 ] 113.246.174.151 GET www.jisitech.com/css/language-selector.css
+[运行时间：0.019106s] [吞吐率：52.34req/s] [内存消耗：1,549.45kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002122s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'language-selector.css',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/css/language-selector_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T16:33:13+08:00 ] 113.246.174.151 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.019481s] [吞吐率：51.33req/s] [内存消耗：1,549.83kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001438s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T16:33:13+08:00 ] 113.246.174.151 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.017062s] [吞吐率：58.61req/s] [内存消耗：1,549.83kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001623s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mrqa2daf4qtm2qqcrpcg5c0os0; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T16:33:49+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/index/welcome.html
+[运行时间：0.259325s] [吞吐率：3.86req/s] [内存消耗：2,964.94kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001650s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000208s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1557331200 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000215s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:33:49+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/index/welcome.html
+[运行时间：0.185463s] [吞吐率：5.39req/s] [内存消耗：2,964.57kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002007s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000283s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000482s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.001628s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1557331200 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:33:59+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/index/index.html
+[运行时间：0.034237s] [吞吐率：29.21req/s] [内存消耗：2,751.00kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001668s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000227s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000455s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000705s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:33:59+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/index/welcome.html
+[运行时间：0.064504s] [吞吐率：15.50req/s] [内存消耗：2,964.94kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001503s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000212s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1557331200 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000207s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:34:00+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/index/welcome.html
+[运行时间：0.124545s] [吞吐率：8.03req/s] [内存消耗：2,964.57kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001425s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000178s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ /www/wwwroot/www.jisitech.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/index/welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1557331200 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:34:02+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.042787s] [吞吐率：23.37req/s] [内存消耗：5,366.32kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001411s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000236s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] INSERT INTO `tp_admin_log` (`uid` , `uname` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `time` , `desc`) VALUES (7 , 'SuperAdmin' , '183.17.65.16' , '中国 广东 深圳 ' , 'Windows 10' , 'Chrome(63.0.3239.132)' , 'http://www.jisitech.com/admin/system/page.html' , 'admin' , 'System' , 'page' , 'GET' , 'a:1:{s:23:\"/admin/system/page_html\";s:0:\"\";}' , 1557390842 , '配置页') [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='7' and g.status='1' ) [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:35:39+08:00 ] 183.17.65.16 POST www.jisitech.com/admin/system/page.html
+[运行时间：0.052888s] [吞吐率：18.91req/s] [内存消耗：5,264.70kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001406s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.jisitech.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5845',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+  'web_name' => '集思科技',
+  'description' => '1',
+  'keywords' => 'PCB抄板,PCB生产, 芯片解密, PCB Layout ,深圳PCB抄板，原理图反推，样机制作，PCB改板 BOM清单制作，样机调试，线路板抄板 单片机解密，加密芯片破解，',
+  'logo' => '/uploads/system/20190506/d9061ebc29aa26fbb88837e3b4e64c2b.jpg',
+  'tell' => '+86-0755-82956260',
+  'gsdesc' => '北京上云科技发展有限公司，是专注于高端定制的北京网站设计公司<br/>         具有20年建站经验的北京网页设计公司，最早注重响应式网站建设的北京网站建设公司',
+  'address' => '广东省深圳市',
+  'webinfo' => 'Copyright © 1feel.com 1998-2019,All Rights Reserved 京ICP备140551号         京公网安备110105015392',
+  'gsjs' => ' 深圳集思科技有限公司是一家专业从PCB线路板集设计,芯片解密，抄板,PCB生产,SMT加工于一体的高科技企业,位于亚洲最大的电子产品及电子元器件采购中心华强北中心区。公司专业从事高速电路PCB Layout ,PCB抄板,多层高精密PCB板抄板、改板、样机调试工作.可为客户提供从IC解密(限合法)——抄板——原理图反推——BOM制作——PCBA生产直到成品的一站式服务',
+  'gsjsimg' => '/uploads/system/20190423\\53e7f6fc0bf8af694c4e42bc24991dcd.jpg',
+  'phone' => '136-6228-6682',
+  'contact' => '                    <p>业务电话： 0755-82956260 手机：13662286682  </p>                      <p>E-mail: dai@pcbxy.com QQ: 2052268 微信：13662286682</p>',
+  'beian' => '粤ICP备14031015号',
+  'erwm' => '/uploads/system/20190423\\f3ce381e084bcc3130928d14a57449e5.jpg',
+  'hexin1' => '1:1还原 100%成功',
+  'hexinm1' => '集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，每个细节都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。',
+  'hexinimg1' => '/uploads/system/20190509/ee5087bc33ebe87a4d77f8fc1e130bfb.jpg',
+  'hexinimg2' => '/uploads/system/20190509/42e4327fc15aba5d3d33f51b94fe8dd4.jpg',
+  'hexinm2' => '集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。',
+  'hexin2' => '品质源于对细节的一丝不苟',
+  'hexin3' => '专业来自对流程的层层把控',
+  'hexinm3' => '集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。',
+  'hexinimg3' => '/uploads/system/20190509/e2321c1970fdb29f571db14c0fde52ad.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000277s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.001253s ]
+[ sql ] [ SQL ] INSERT INTO `tp_admin_log` (`uid` , `uname` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `time` , `desc`) VALUES (7 , 'SuperAdmin' , '183.17.65.16' , '中国 广东 深圳 ' , 'Windows 10' , 'Chrome(63.0.3239.132)' , 'http://www.jisitech.com/admin/system/page.html' , 'admin' , 'System' , 'page' , 'POST' , 'a:24:{s:23:\"/admin/system/page_html\";s:0:\"\";s:8:\"web_name\";s:12:\"集思科技\";s:11:\"description\";s:1:\"1\";s:8:\"keywords\";s:196:\"PCB抄板,PCB生产, 芯片解密, PCB Layout ,深圳PCB抄板，原理图反推，样机制作，PCB改板 BOM清单制作，样机调试，线路板抄板 单片机解密，加密芯片破解，\";s:4:\"logo\";s:61:\"/uploads/system/20190506/d9061ebc29aa26fbb88837e3b4e64c2b.jpg\";s:4:\"tell\";s:17:\"+86-0755-82956260\";s:6:\"gsdesc\";s:217:\"北京上云科技发展有限公司，是专注于高端定制的北京网站设计公司<br/>         具有20年建站经验的北京网页设计公司，最早注重响应式网站建设的北京网站建设公司\";s:7:\"address\";s:18:\"广东省深圳市\";s:7:\"webinfo\";s:107:\"Copyright © 1feel.com 1998-2019,All Rights Reserved 京ICP备140551号         京公网安备110105015392\";s:4:\"gsjs\";s:468:\" 深圳集思科技有限公司是一家专业从PCB线路板集设计,芯片解密，抄板,PCB生产,SMT加工于一体的高科技企业,位于亚洲最大的电子产品及电子元器件采购中心华强北中心区。公司专业从事高速电路PCB Layout ,PCB抄板,多层高精密PCB板抄板、改板、样机调试工作.可为客户提供从IC解密(限合法)——抄板——原理图反推——BOM制作——PCBA生产直到成品的一站式服务\";s:7:\"gsjsimg\";s:61:\"/uploads/system/20190423\\53e7f6fc0bf8af694c4e42bc24991dcd.jpg\";s:5:\"phone\";s:13:\"136-6228-6682\";s:7:\"contact\";s:162:\"                    <p>业务电话： 0755-82956260 手机：13662286682  </p>                      <p>E-mail: dai@pcbxy.com QQ: 2052268 微信：13662286682</p>\";s:5:\"beian\";s:20:\"粤ICP备14031015号\";s:4:\"erwm\";s:61:\"/uploads/system/20190423\\f3ce381e084bcc3130928d14a57449e5.jpg\";s:6:\"hexin1\";s:20:\"1:1还原 100%成功\";s:7:\"hexinm1\";s:224:\"集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，每个细节都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。\";s:9:\"hexinimg1\";s:61:\"/uploads/system/20190509/ee5087bc33ebe87a4d77f8fc1e130bfb.jpg\";s:9:\"hexinimg2\";s:61:\"/uploads/system/20190509/42e4327fc15aba5d3d33f51b94fe8dd4.jpg\";s:7:\"hexinm2\";s:212:\"集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。\";s:6:\"hexin2\";s:36:\"品质源于对细节的一丝不苟\";s:6:\"hexin3\";s:36:\"专业来自对流程的层层把控\";s:7:\"hexinm3\";s:212:\"集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。\";s:9:\"hexinimg3\";s:61:\"/uploads/system/20190509/e2321c1970fdb29f571db14c0fde52ad.jpg\";}' , 1557390939 , '配置页') [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='7' and g.status='1' ) [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='集思科技'  WHERE  `ename` = 'web_name' [ RunTime:0.000369s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='1'  WHERE  `ename` = 'description' [ RunTime:0.000307s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='PCB抄板,PCB生产, 芯片解密, PCB Layout ,深圳PCB抄板，原理图反推，样机制作，PCB改板 BOM清单制作，样机调试，线路板抄板 单片机解密，加密芯片破解，'  WHERE  `ename` = 'keywords' [ RunTime:0.000315s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190506/d9061ebc29aa26fbb88837e3b4e64c2b.jpg'  WHERE  `ename` = 'logo' [ RunTime:0.000325s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='+86-0755-82956260'  WHERE  `ename` = 'tell' [ RunTime:0.000307s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='北京上云科技发展有限公司，是专注于高端定制的北京网站设计公司<br/>         具有20年建站经验的北京网页设计公司，最早注重响应式网站建设的北京网站建设公司'  WHERE  `ename` = 'gsdesc' [ RunTime:0.000322s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='广东省深圳市'  WHERE  `ename` = 'address' [ RunTime:0.000297s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='Copyright © 1feel.com 1998-2019,All Rights Reserved 京ICP备140551号         京公网安备110105015392'  WHERE  `ename` = 'webinfo' [ RunTime:0.000313s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`=' 深圳集思科技有限公司是一家专业从PCB线路板集设计,芯片解密，抄板,PCB生产,SMT加工于一体的高科技企业,位于亚洲最大的电子产品及电子元器件采购中心华强北中心区。公司专业从事高速电路PCB Layout ,PCB抄板,多层高精密PCB板抄板、改板、样机调试工作.可为客户提供从IC解密(限合法)——抄板——原理图反推——BOM制作——PCBA生产直到成品的一站式服务'  WHERE  `ename` = 'gsjs' [ RunTime:0.000324s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190423\\53e7f6fc0bf8af694c4e42bc24991dcd.jpg'  WHERE  `ename` = 'gsjsimg' [ RunTime:0.000306s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='136-6228-6682'  WHERE  `ename` = 'phone' [ RunTime:0.000359s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='                    <p>业务电话： 0755-82956260 手机：13662286682  </p>                      <p>E-mail: dai@pcbxy.com QQ: 2052268 微信：13662286682</p>'  WHERE  `ename` = 'contact' [ RunTime:0.000299s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='粤ICP备14031015号'  WHERE  `ename` = 'beian' [ RunTime:0.000348s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190423\\f3ce381e084bcc3130928d14a57449e5.jpg'  WHERE  `ename` = 'erwm' [ RunTime:0.000301s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='1:1还原 100%成功'  WHERE  `ename` = 'hexin1' [ RunTime:0.000309s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，每个细节都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。'  WHERE  `ename` = 'hexinm1' [ RunTime:0.000377s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/ee5087bc33ebe87a4d77f8fc1e130bfb.jpg'  WHERE  `ename` = 'hexinimg1' [ RunTime:0.000355s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/42e4327fc15aba5d3d33f51b94fe8dd4.jpg'  WHERE  `ename` = 'hexinimg2' [ RunTime:0.000321s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。'  WHERE  `ename` = 'hexinm2' [ RunTime:0.000319s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='品质源于对细节的一丝不苟'  WHERE  `ename` = 'hexin2' [ RunTime:0.000311s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='专业来自对流程的层层把控'  WHERE  `ename` = 'hexin3' [ RunTime:0.000302s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='集思科技拥有专业的QC团队，为保证质量，不管是简单的单面板还是复杂的多层板，都要求必须通过公司流程层层审核，以确保逆向设计出的PCB生产资料零误差。'  WHERE  `ename` = 'hexinm3' [ RunTime:0.000347s ]
+[ sql ] [ SQL ] UPDATE `tp_system`  SET `value`='/uploads/system/20190509/e2321c1970fdb29f571db14c0fde52ad.jpg'  WHERE  `ename` = 'hexinimg3' [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:35:42+08:00 ] 183.17.65.16 GET www.jisitech.com/admin/system/page.html
+[运行时间：0.043565s] [吞吐率：22.95req/s] [内存消耗：5,366.48kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001627s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/admin/system/page.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000191s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ /www/wwwroot/www.jisitech.com/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/admin/view/system/page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 7 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] INSERT INTO `tp_admin_log` (`uid` , `uname` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `time` , `desc`) VALUES (7 , 'SuperAdmin' , '183.17.65.16' , '中国 广东 深圳 ' , 'Windows 10' , 'Chrome(63.0.3239.132)' , 'http://www.jisitech.com/admin/system/page.html' , 'admin' , 'System' , 'page' , 'GET' , 'a:1:{s:23:\"/admin/system/page_html\";s:0:\"\";}' , 1557390942 , '配置页') [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='7' and g.status='1' ) [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,113,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,114,115,26,29,30,35,58,59,60,77,116,117,67,64,63,65,66,68,85,86,106,107,88,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 3 ORDER BY `id` ASC [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:35:43+08:00 ] 183.17.65.16 GET www.jisitech.com/
+[运行时间：0.041313s] [吞吐率：24.21req/s] [内存消耗：2,860.19kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001487s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/case',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000193s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '183.17.65.16'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557390043 LIMIT 1 [ RunTime:0.001377s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('183.17.65.16' , 1557390943 , 'Chrome' , 'pc') [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557331200 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=30,`pc`=20,`mobile`=10  WHERE  `time` >= 1557331200 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '183.17.65.16'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557390043 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[ 2019-05-09T16:35:43+08:00 ] 183.17.65.16 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.023540s] [吞吐率：42.48req/s] [内存消耗：1,549.83kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001429s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T16:35:43+08:00 ] 183.17.65.16 GET www.jisitech.com/css/language-selector.css
+[运行时间：0.035181s] [吞吐率：28.42req/s] [内存消耗：1,549.45kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001392s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'language-selector.css',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/css/language-selector_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T16:35:43+08:00 ] 183.17.65.16 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.021652s] [吞吐率：46.19req/s] [内存消耗：1,549.83kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002045s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=adpca9dhtlbnvma8bpq4706vj5; think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jisitech.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T19:07:53+08:00 ] 66.249.64.181 GET www.jisitech.com/robots.txt
+[运行时间：0.015631s] [吞吐率：63.97req/s] [内存消耗：1,548.51kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001434s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'accept' => 'text/plain,text/html,*/*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/robots_txt' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T22:01:20+08:00 ] 113.58.224.175 GET www.jisitech.com/
+[运行时间：0.037933s] [吞吐率：26.36req/s] [内存消耗：2,858.61kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001680s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'deflate, gzip',
+  'accept' => '*/*',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000176s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000392s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.58.224.175'  AND `type` = 'pc'  AND `client` = 'Firefox'  AND `time` > 1557409580 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('113.58.224.175' , 1557410480 , 'Firefox' , 'pc') [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557331200 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=31,`pc`=21,`mobile`=10  WHERE  `time` >= 1557331200 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '113.58.224.175'  AND `type` = 'pc'  AND `client` = 'Firefox'  AND `time` > 1557409580 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000252s ]
+---------------------------------------------------------------
+[ 2019-05-09T23:04:23+08:00 ] 66.249.64.185 GET www.jisitech.com/
+[运行时间：0.050819s] [吞吐率：19.68req/s] [内存消耗：2,859.18kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002240s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000189s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000507s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '66.249.64.185'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557413363 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('66.249.64.185' , 1557414263 , '其它' , 'pc') [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557331200 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=32,`pc`=22,`mobile`=10  WHERE  `time` >= 1557331200 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '66.249.64.185'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557413363 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2019-05-09T23:04:33+08:00 ] 66.249.64.183 GET www.jisitech.com/css/language-selector.css
+[运行时间：0.016302s] [吞吐率：61.34req/s] [内存消耗：1,549.80kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001486s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'language-selector.css',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.jisitech.com/',
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'en-US',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/css/language-selector_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:04:33+08:00 ] 66.249.64.183 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.016534s] [吞吐率：60.48req/s] [内存消耗：1,550.17kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001468s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.jisitech.com/',
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'en-US',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
