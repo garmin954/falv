@@ -1,0 +1,1517 @@
+---------------------------------------------------------------
+[ 2019-05-14T09:22:37+08:00 ] 42.236.99.86 GET www.jisitech.com/
+[运行时间：0.046696s] [吞吐率：21.42req/s] [内存消耗：2,878.35kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001636s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000154s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002507s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.002079s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.002921s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.99.86'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557796057 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.99.86' , 1557796957 , 'Chrome' , 'pc') [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_count` (`time`) VALUES (1557796957) [ RunTime:0.000241s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=1,`pc`=1,`mobile`=0  WHERE  `time` >= 1557763200 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.99.86'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557796057 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2019-05-14T13:58:19+08:00 ] 111.196.62.242 GET www.jisitech.com/feed
+[运行时间：0.014653s] [吞吐率：68.25req/s] [内存消耗：1,548.26kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001449s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'feed',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2)',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  '/feed' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:04+08:00 ] 167.114.209.28 GET www.jisitech.com/
+[运行时间：0.067259s] [吞吐率：14.87req/s] [内存消耗：2,858.45kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001539s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000268s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000534s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001580s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001494s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814264 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('167.114.209.28' , 1557815164 , '其它' , 'pc') [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.002095s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=2,`pc`=2,`mobile`=0  WHERE  `time` >= 1557763200 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814264 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.002673s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.022392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:07+08:00 ] 167.114.209.28 GET www.jisitech.com/robots.txt
+[运行时间：0.016422s] [吞吐率：60.89req/s] [内存消耗：1,548.06kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001614s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/robots_txt' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:07+08:00 ] 167.114.209.28 GET www.jisitech.com/sitemap.xml
+[运行时间：0.015078s] [吞吐率：66.32req/s] [内存消耗：1,548.06kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001476s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sitemap.xml',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/sitemap_xml' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:08+08:00 ] 167.114.209.28 GET www.jisitech.com/
+[运行时间：0.043682s] [吞吐率：22.89req/s] [内存消耗：2,853.52kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001490s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000207s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000455s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.005408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001508s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814268 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814268 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:09+08:00 ] 167.114.209.28 GET www.jisitech.com/contact
+[运行时间：0.044565s] [吞吐率：22.44req/s] [内存消耗：2,758.79kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002376s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'contact',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/contact' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000161s ]
+[ info ] [ RUN ] app\index\controller\Index->contact[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/contact.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001884s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001678s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814269 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814269 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001570s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000306s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:10+08:00 ] 167.114.209.28 GET www.jisitech.com/support
+[运行时间：0.038622s] [吞吐率：25.89req/s] [内存消耗：2,913.91kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001440s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'support',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/support' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000161s ]
+[ info ] [ RUN ] app\index\controller\Index->support[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/support.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'support_list',
+  6 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.002879s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814270 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814270 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001619s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 6  AND `status` = 1 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `cate_id` = 6 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 6 LIMIT 0,15 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000259s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:11+08:00 ] 167.114.209.28 GET www.jisitech.com/javacript:;
+[运行时间：0.020185s] [吞吐率：49.54req/s] [内存消耗：1,548.31kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002107s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'javacript:;',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/javacript:;' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:13+08:00 ] 167.114.209.28 GET www.jisitech.com/article/8.html
+[运行时间：0.062934s] [吞吐率：15.89req/s] [内存消耗：2,764.66kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001480s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/article/8_html' => '',
+  'id' => '8',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000175s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.007045s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001575s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814273 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814273 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.011250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:14+08:00 ] 167.114.209.28 GET www.jisitech.com/hntjx.html
+[运行时间：0.016088s] [吞吐率：62.16req/s] [内存消耗：1,548.35kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001494s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hntjx',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/hntjx_html' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:16+08:00 ] 167.114.209.28 GET www.jisitech.com/article/10.html
+[运行时间：0.047646s] [吞吐率：20.99req/s] [内存消耗：2,764.68kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001446s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/article/10_html' => '',
+  'id' => '10',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000184s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001897s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.012270s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001657s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814276 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814276 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:17+08:00 ] 167.114.209.28 GET www.jisitech.com/article/3.html
+[运行时间：0.036921s] [吞吐率：27.08req/s] [内存消耗：2,760.52kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001421s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/article/3_html' => '',
+  'id' => '3',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000217s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001786s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.002741s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814277 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814277 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001865s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000249s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:18+08:00 ] 167.114.209.28 GET www.jisitech.com/article/11.html
+[运行时间：0.036954s] [吞吐率：27.06req/s] [内存消耗：2,760.54kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001512s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/article/11_html' => '',
+  'id' => '11',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000153s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001945s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814278 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814278 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:19+08:00 ] 167.114.209.28 GET www.jisitech.com/article/6.html
+[运行时间：0.039541s] [吞吐率：25.29req/s] [内存消耗：2,764.66kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001437s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/article/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000193s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002624s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814279 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814279 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001834s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:20+08:00 ] 167.114.209.28 GET www.jisitech.com/chanpin_xq1.html
+[运行时间：0.015575s] [吞吐率：64.20req/s] [内存消耗：1,548.38kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001512s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpin_xq1',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/chanpin_xq1_html' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:22+08:00 ] 167.114.209.28 GET www.jisitech.com/category/4.html
+[运行时间：0.036928s] [吞吐率：27.08req/s] [内存消耗：2,755.52kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001468s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'category',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/category/4_html' => '',
+  'id' => '4',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000155s ]
+[ info ] [ RUN ] app\index\controller\Index->category[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/category.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'pinfo',
+  6 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002763s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001739s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814282 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814282 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001541s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 4  AND `status` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:23+08:00 ] 167.114.209.28 GET www.jisitech.com/article/5.html
+[运行时间：0.037491s] [吞吐率：26.67req/s] [内存消耗：2,760.52kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001535s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'cookie' => 'think_var=zh-hk',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/article/5_html' => '',
+  'id' => '5',
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000171s ]
+[ info ] [ RUN ] app\index\controller\Index->article[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/article.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'info',
+  5 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000511s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002499s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814283 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557814283 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001836s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000262s ]
+---------------------------------------------------------------
+[ 2019-05-14T14:26:24+08:00 ] 167.114.209.28 GET www.jisitech.com/ads.txt
+[运行时间：0.016427s] [吞吐率：60.88req/s] [内存消耗：1,548.04kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002081s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ads.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+  '/ads_txt' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T14:26:25+08:00 ] 167.114.209.28 GET www.jisitech.com/
+[运行时间：0.044691s] [吞吐率：22.38req/s] [内存消耗：2,858.77kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002054s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.jisitech.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G925F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.94 Mobile Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000188s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001553s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001600s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'mobile'  AND `client` = 'Chrome'  AND `time` > 1557814285 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('167.114.209.28' , 1557815185 , 'Chrome' , 'mobile') [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=3,`pc`=2,`mobile`=1  WHERE  `time` >= 1557763200 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '167.114.209.28'  AND `type` = 'mobile'  AND `client` = 'Chrome'  AND `time` > 1557814285 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001817s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001830s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000257s ]
+---------------------------------------------------------------
+[ 2019-05-14T15:22:17+08:00 ] 66.249.64.181 GET www.jisitech.com/robots.txt
+[运行时间：0.015968s] [吞吐率：62.63req/s] [内存消耗：1,548.51kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001425s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'accept' => 'text/plain,text/html,*/*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/robots_txt' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T15:22:18+08:00 ] 66.249.64.185 GET www.jisitech.com/
+[运行时间：0.043633s] [吞吐率：22.92req/s] [内存消耗：2,859.18kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001434s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000203s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001655s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '66.249.64.185'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557817638 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('66.249.64.185' , 1557818538 , '其它' , 'pc') [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=4,`pc`=3,`mobile`=1  WHERE  `time` >= 1557763200 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '66.249.64.185'  AND `type` = 'pc'  AND `client` = '其它'  AND `time` > 1557817638 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.003135s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001519s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2019-05-14T15:22:36+08:00 ] 66.249.64.181 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.017162s] [吞吐率：58.27req/s] [内存消耗：1,550.17kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001427s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.jisitech.com/',
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'en-US',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T19:04:07+08:00 ] 66.249.64.181 GET www.jisitech.com/
+[运行时间：0.071587s] [吞吐率：13.97req/s] [内存消耗：2,860.16kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002075s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8,text/html,application/xhtml+xml,application/signed-exchange;v=b3,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'amp-cache-transform' => 'google;v="1"',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000220s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002252s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001866s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.003122s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '66.249.64.181'  AND `type` = 'mobile'  AND `client` = 'Chrome'  AND `time` > 1557830947 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('66.249.64.181' , 1557831847 , 'Chrome' , 'mobile') [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=5,`pc`=3,`mobile`=2  WHERE  `time` >= 1557763200 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '66.249.64.181'  AND `type` = 'mobile'  AND `client` = 'Chrome'  AND `time` > 1557830947 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001961s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.014457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2019-05-14T19:04:17+08:00 ] 66.249.64.181 GET www.jisitech.com/css/language-selector.css
+[运行时间：0.022936s] [吞吐率：43.60req/s] [内存消耗：1,550.17kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002029s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'language-selector.css',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/css,*/*;q=0.1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.jisitech.com/',
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'en-US',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/css/language-selector_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T19:04:18+08:00 ] 66.249.64.181 GET www.jisitech.com/public/static/index/js/pro.js
+[运行时间：0.022678s] [吞吐率：44.10req/s] [内存消耗：1,550.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001976s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.jisitech.com/',
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'en-US',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/pro_js' => '',
+  'js' => 'pro.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T21:07:49+08:00 ] 42.236.99.86 GET www.jisitech.com/
+[运行时间：0.044559s] [吞吐率：22.44req/s] [内存消耗：2,877.66kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001453s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.0.2; en-us; Galaxy Nexus Build/ICL53F) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000159s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002754s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001651s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001456s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.99.86'  AND `type` = 'mobile'  AND `client` = 'Firefox'  AND `time` > 1557838369 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.99.86' , 1557839269 , 'Firefox' , 'mobile') [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001630s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=6,`pc`=3,`mobile`=3  WHERE  `time` >= 1557763200 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.99.86'  AND `type` = 'mobile'  AND `client` = 'Firefox'  AND `time` > 1557838369 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001684s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001956s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000262s ]
+---------------------------------------------------------------
+[ 2019-05-14T22:45:48+08:00 ] 42.236.10.112 GET www.jisitech.com/
+[运行时间：0.068183s] [吞吐率：14.67req/s] [内存消耗：2,877.60kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002234s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.4.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000178s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.001649s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.003138s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.112'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844248 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.10.112' , 1557845148 , 'Chrome' , 'pc') [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001861s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=7,`pc`=4,`mobile`=3  WHERE  `time` >= 1557763200 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.112'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844248 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.015748s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[ 2019-05-14T22:45:48+08:00 ] 42.236.10.113 GET www.jisitech.com/
+[运行时间：0.071780s] [吞吐率：13.93req/s] [内存消耗：2,877.60kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002132s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000251s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.001696s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.113'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844248 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.10.113' , 1557845148 , 'Chrome' , 'pc') [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=8,`pc`=5,`mobile`=3  WHERE  `time` >= 1557763200 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.113'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844248 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.014096s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.012620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-05-14T22:45:48+08:00 ] 42.236.10.91 GET www.jisitech.com/
+[运行时间：0.056700s] [吞吐率：17.64req/s] [内存消耗：2,877.60kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003787s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000187s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001305s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.009751s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.002340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.001878s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.91'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844248 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.10.91' , 1557845148 , 'Chrome' , 'pc') [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=9,`pc`=6,`mobile`=3  WHERE  `time` >= 1557763200 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.91'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844248 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001551s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.002447s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2019-05-14T22:45:49+08:00 ] 42.236.10.74 GET www.jisitech.com/
+[运行时间：0.083346s] [吞吐率：12.00req/s] [内存消耗：2,877.60kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001858s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000220s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.028159s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.002307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.004747s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.74'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844249 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.10.74' , 1557845149 , 'Chrome' , 'pc') [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.002355s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=10,`pc`=7,`mobile`=3  WHERE  `time` >= 1557763200 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.74'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844249 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.001964s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2019-05-14T22:45:49+08:00 ] 42.236.10.116 GET www.jisitech.com/
+[运行时间：0.068066s] [吞吐率：14.69req/s] [内存消耗：2,877.60kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001682s ]
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'Keep-Alive',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.jisitech.com/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.jisitech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.jisitech.com/./application/index/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000163s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.jisitech.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.jisitech.com/./application/index/view/index/index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'top_new',
+  4 => 'advert_list',
+  5 => 'banner_list',
+  6 => 'anli_list',
+  7 => 'news_list',
+  8 => 'current',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003095s ] mysql:host=127.0.0.1;dbname=www_jisitech_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.005219s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.004989s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.002482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.116'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844249 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('42.236.10.116' , 1557845149 , 'Chrome' , 'pc') [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.001976s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1557763200 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=11,`pc`=8,`mobile`=3  WHERE  `time` >= 1557763200 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '42.236.10.116'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1557844249 LIMIT 1 [ RunTime:0.004068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.003715s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8  AND `status` = 1 LIMIT 5 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 7 ORDER BY `id` DESC LIMIT 6 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` = 8 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.001771s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 1 ORDER BY `sort` ASC [ RunTime:0.000277s ]

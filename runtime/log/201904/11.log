@@ -1,0 +1,2957 @@
+---------------------------------------------------------------
+[ 2019-04-11T23:25:48+08:00 ] 127.0.0.1 GET qiye1.com/
+[运行时间：0.361149s] [吞吐率：2.77req/s] [内存消耗：2,487.22kb] [文件加载：70]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.032575s ]
+[ info ] [ LANG ] F:\WWW\qiye1\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\WWW\qiye1/./application/index\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\WWW\qiye1/./application/index\lang\zh-hk.php
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000921s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\WWW\qiye1\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/index\view\index\index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'advert_list',
+  4 => 'banner_list',
+  5 => 'list',
+  6 => 'c',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014670s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.049594s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.026530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.005357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.028801s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '127.0.0.1'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1554995448 LIMIT 1 [ RunTime:0.001370s ]
+[ sql ] [ SQL ] INSERT INTO `tp_visit_log` (`ip` , `time` , `client` , `type`) VALUES ('127.0.0.1' , 1554996348 , 'Chrome' , 'pc') [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.020806s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` WHERE  `time` >= 1554912000 LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] UPDATE `tp_visit_count`  SET `count`=2,`pc`=2,`mobile`=0  WHERE  `time` >= 1554912000 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '127.0.0.1'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1554995448 LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.044592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` IN (1,2,3,4,5)  AND `status` = 1 [ RunTime:0.009779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.034361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ error ] [8]未定义数组索引: link[F:\WWW\qiye1\runtime\temp\3cfa937e44f3d6cb441be74a308584a7.php:95]
+---------------------------------------------------------------
+[ 2019-04-11T23:25:48+08:00 ] 127.0.0.1 GET qiye1.com/favicon.ico
+[运行时间：0.028148s] [吞吐率：35.53req/s] [内存消耗：1,290.80kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002639s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:25:52+08:00 ] 127.0.0.1 GET qiye1.com/admin
+[运行时间：0.281276s] [吞吐率：3.56req/s] [内存消耗：2,285.36kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003687s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\WWW\qiye1\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'left_nav',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003494s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.146328s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` IS NULL [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.081839s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000916s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:25:55+08:00 ] 127.0.0.1 GET qiye1.com/admin/login
+[运行时间：0.035982s] [吞吐率：27.79req/s] [内存消耗：1,667.77kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002241s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login' => '',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000478s ]
+[ info ] [ RUN ] app\admin\Controller\Login->index[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\system\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:25:55+08:00 ] 127.0.0.1 GET qiye1.com/admin/login/verify.html
+[运行时间：0.101822s] [吞吐率：9.82req/s] [内存消耗：1,518.84kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002689s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/verify_html' => '',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000458s ]
+[ info ] [ RUN ] app\admin\Controller\Login->verify[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:06+08:00 ] 127.0.0.1 POST qiye1.com/admin/login/check.html
+[运行时间：0.026696s] [吞吐率：37.46req/s] [内存消耗：1,525.38kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002679s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qiye1.com',
+  'accept' => '*/*',
+  'content-length' => '41',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/check_html' => '',
+  'username' => 'admin',
+  'password' => '123456',
+  'check' => 'krd7',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000425s ]
+[ info ] [ RUN ] app\admin\Controller\Login->check[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:06+08:00 ] 127.0.0.1 GET qiye1.com/admin/login/verify.html?seed=0.19568659924272547
+[运行时间：0.028242s] [吞吐率：35.41req/s] [内存消耗：1,519.05kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002202s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/verify_html' => '',
+  'seed' => '0.19568659924272547',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000376s ]
+[ info ] [ RUN ] app\admin\Controller\Login->verify[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:14+08:00 ] 127.0.0.1 POST qiye1.com/admin/login/check.html
+[运行时间：0.120817s] [吞吐率：8.28req/s] [内存消耗：2,182.27kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002706s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qiye1.com',
+  'accept' => '*/*',
+  'content-length' => '41',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/check_html' => '',
+  'username' => 'admin',
+  'password' => '123456',
+  'check' => 'mehh',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000369s ]
+[ info ] [ RUN ] app\admin\Controller\Login->check[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'expire' => 1,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002205s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.068737s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `username` = 'admin'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001041s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:14+08:00 ] 127.0.0.1 GET qiye1.com/admin/login/verify.html?seed=0.4518845484530456
+[运行时间：0.040746s] [吞吐率：24.54req/s] [内存消耗：1,519.88kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002631s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/verify_html' => '',
+  'seed' => '0.4518845484530456',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000854s ]
+[ info ] [ RUN ] app\admin\Controller\Login->verify[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:17+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.241965s] [吞吐率：4.13req/s] [内存消耗：2,383.93kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003122s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.001564s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011916s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.043690s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.061023s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.029419s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.017563s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:17+08:00 ] 127.0.0.1 GET qiye1.com/public/static/index/js/jquery-1.10.2.js
+[运行时间：0.027844s] [吞吐率：35.91req/s] [内存消耗：1,291.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002545s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/jquery-1_10_2_js' => '',
+  'js' => 'jquery-1.10.2.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:17+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.430010s] [吞吐率：2.33req/s] [内存消耗：2,588.72kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005950s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000459s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004414s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.007756s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008730s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008237s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.009211s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.007049s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.027878s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.028567s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.003246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.018749s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.023190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.157102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000808s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:18+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.169621s] [吞吐率：5.90req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002357s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000612s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002743s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.012769s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.012297s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.012446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.013103s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.011768s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.014293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.008489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.008940s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:26+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.078111s] [吞吐率：12.80req/s] [内存消耗：2,263.89kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002216s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000471s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002999s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008738s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010988s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000726s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:26+08:00 ] 127.0.0.1 GET qiye1.com/public/static/index/js/jquery-1.10.2.js
+[运行时间：0.027231s] [吞吐率：36.72req/s] [内存消耗：1,291.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004922s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/jquery-1_10_2_js' => '',
+  'js' => 'jquery-1.10.2.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:27+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.138066s] [吞吐率：7.24req/s] [内存消耗：2,418.61kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002959s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000580s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002103s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.006840s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009312s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.007833s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.008071s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.008551s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.007869s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.008589s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.009035s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.008013s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:27+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.355548s] [吞吐率：2.81req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004219s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000522s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004164s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008495s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.088318s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.122053s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.011098s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.010799s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.010667s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.012821s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.011643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.012253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:31+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.077061s] [吞吐率：12.98req/s] [内存消耗：2,263.89kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002209s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000522s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012091s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008011s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010068s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008171s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000841s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:31+08:00 ] 127.0.0.1 GET qiye1.com/public/static/index/js/jquery-1.10.2.js
+[运行时间：0.029437s] [吞吐率：33.97req/s] [内存消耗：1,291.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004813s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/jquery-1_10_2_js' => '',
+  'js' => 'jquery-1.10.2.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:26:31+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.130052s] [吞吐率：7.69req/s] [内存消耗：2,418.61kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002273s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000580s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002270s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.006648s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008751s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008093s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.007381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.008484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008298s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.007580s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.009369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.007691s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000585s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:26:31+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.160368s] [吞吐率：6.24req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003549s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000681s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003611s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.009817s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008127s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009825s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.011083s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.010337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.012237s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.008861s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.011795s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.013573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:35+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.074174s] [吞吐率：13.48req/s] [内存消耗：2,263.89kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002594s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000405s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002383s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.007792s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.007864s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009167s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:35+08:00 ] 127.0.0.1 GET qiye1.com/public/static/index/js/jquery-1.10.2.js
+[运行时间：0.033361s] [吞吐率：29.98req/s] [内存消耗：1,291.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004270s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/jquery-1_10_2_js' => '',
+  'js' => 'jquery-1.10.2.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:27:36+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.138267s] [吞吐率：7.23req/s] [内存消耗：2,418.61kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003966s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000571s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002986s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008853s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.007016s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.006959s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.009960s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.008597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.008675s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.008015s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.009253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:36+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.165158s] [吞吐率：6.05req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004679s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000704s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003711s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008725s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009872s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.011228s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.011879s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.011103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.010840s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.010865s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.010524s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.009472s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:39+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.063402s] [吞吐率：15.77req/s] [内存消耗：2,263.89kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002253s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000453s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002247s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008857s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008165s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000662s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:39+08:00 ] 127.0.0.1 GET qiye1.com/public/static/index/js/jquery-1.10.2.js
+[运行时间：0.032430s] [吞吐率：30.84req/s] [内存消耗：1,291.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004912s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/index/js/jquery-1_10_2_js' => '',
+  'js' => 'jquery-1.10.2.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:27:39+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.137445s] [吞吐率：7.28req/s] [内存消耗：2,418.61kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002700s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000375s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002539s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.009065s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008642s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.007424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.008934s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.008674s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008783s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.009286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.010529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.007899s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:40+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.190196s] [吞吐率：5.26req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003749s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000638s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002820s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008027s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010610s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010008s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.044358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.008630s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.010452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.011710s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.009317s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:54+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.123846s] [吞吐率：8.07req/s] [内存消耗：2,383.99kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002742s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000479s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002515s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.046402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010365s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.007281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:54+08:00 ] 127.0.0.1 GET qiye1.com/public/static/admin/js/jquery-1.10.2.js
+[运行时间：0.030078s] [吞吐率：33.25req/s] [内存消耗：1,291.55kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002588s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/admin/js/jquery-1_10_2_js' => '',
+  'js' => 'jquery-1.10.2.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:27:54+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.133624s] [吞吐率：7.48req/s] [内存消耗：2,418.61kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002201s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000405s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002049s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.006598s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009227s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008274s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.007240s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.009817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.011062s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.007836s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.008757s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.007498s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000703s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:27:55+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.125243s] [吞吐率：7.98req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002675s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000473s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002489s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.007716s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.006831s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.007072s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.007057s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.007752s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.008568s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.007247s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:28:52+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.072034s] [吞吐率：13.88req/s] [内存消耗：2,383.99kb] [文件加载：62]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002362s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000481s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002320s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.010230s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009529s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010275s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:28:52+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.179056s] [吞吐率：5.58req/s] [内存消耗：2,418.61kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003626s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000452s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002624s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.036406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.007625s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.009254s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.009091s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.010757s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.008278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.008336s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.009052s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:28:53+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.128335s] [吞吐率：7.79req/s] [内存消耗：2,418.02kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003618s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000417s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002128s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 6 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009141s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008152s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,19,20,75,76,13,14,47,108,109,87)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.007767s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.007885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.007088s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.008689s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.009417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.007674s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:28:57+08:00 ] 127.0.0.1 GET qiye1.com/admin/login/outlogin.html
+[运行时间：0.071994s] [吞吐率：13.89req/s] [内存消耗：1,477.59kb] [文件加载：51]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003682s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'outlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/outlogin_html' => '',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000404s ]
+[ info ] [ RUN ] app\admin\Controller\Login->outLogin[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\WWW\qiye1\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:00+08:00 ] 127.0.0.1 GET qiye1.com/admin/login
+[运行时间：0.043606s] [吞吐率：22.93req/s] [内存消耗：1,537.43kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004672s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login/outlogin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login' => '',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000601s ]
+[ info ] [ RUN ] app\admin\Controller\Login->index[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\system\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:00+08:00 ] 127.0.0.1 GET qiye1.com/admin/login/verify.html
+[运行时间：0.033724s] [吞吐率：29.65req/s] [内存消耗：1,519.06kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002392s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/verify_html' => '',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000624s ]
+[ info ] [ RUN ] app\admin\Controller\Login->verify[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:22+08:00 ] 127.0.0.1 POST qiye1.com/admin/login/check.html
+[运行时间：0.136967s] [吞吐率：7.30req/s] [内存消耗：2,182.34kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002246s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qiye1.com',
+  'accept' => '*/*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/check_html' => '',
+  'username' => 'yuanlu',
+  'password' => 'yuanlu@954',
+  'check' => 'bqfq',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000623s ]
+[ info ] [ RUN ] app\admin\Controller\Login->check[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'expire' => 1,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002191s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.091854s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `username` = 'yuanlu'  AND `password` = '460bc8fb94253aac4a323e3433e6a1f0' LIMIT 1 [ RunTime:0.001104s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:22+08:00 ] 127.0.0.1 GET qiye1.com/admin/login/verify.html?seed=0.05436214613576418
+[运行时间：0.035146s] [吞吐率：28.45req/s] [内存消耗：1,519.88kb] [文件加载：50]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004042s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/verify_html' => '',
+  'seed' => '0.05436214613576418',
+)
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000515s ]
+[ info ] [ RUN ] app\admin\Controller\Login->verify[ F:\WWW\qiye1\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:24+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/index.html
+[运行时间：0.247220s] [吞吐率：4.04req/s] [内存消耗：2,365.91kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004819s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.002395s ]
+[ info ] [ RUN ] app\admin\Controller\Index->index[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\index.html [ array (
+  0 => 'left_nav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002325s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.041257s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.042068s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.079680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.007354s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:25+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.148727s] [吞吐率：6.72req/s] [内存消耗：2,433.63kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003571s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000405s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004502s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.009661s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010462s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.011571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.009248s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.006637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.007609s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.006642s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.006621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.007113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:25+08:00 ] 127.0.0.1 GET qiye1.com/admin/index/welcome.html
+[运行时间：0.197944s] [吞吐率：5.05req/s] [内存消耗：2,433.04kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002291s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/welcome.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000439s ]
+[ info ] [ RUN ] app\admin\Controller\Index->welcome[ F:\WWW\qiye1\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\index\welcome.html [ array (
+  0 => 'left_nav',
+  1 => 'OS_info',
+  2 => 'visit',
+  3 => 'with',
+  4 => 'art_list',
+  5 => 'admin_message',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002158s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.055154s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008933s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008201s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_count` [ RunTime:0.008971s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_count` ORDER BY `time` DESC LIMIT 7 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.010460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `count` FROM `tp_visit_count` WHERE  `time` >= 1554912000 ORDER BY `time` DESC LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_message` [ RunTime:0.011466s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_message` WHERE  `status` = 1 LIMIT 10 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_log` [ RunTime:0.012714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_log` LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_log` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_comment` [ RunTime:0.009329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_comment` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_comment` WHERE  `status` = 1 ORDER BY `top` DESC,`time` DESC LIMIT 0,5 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:33+08:00 ] 127.0.0.1 GET qiye1.com/admin/system/page.html
+[运行时间：0.207676s] [吞吐率：4.82req/s] [内存消耗：6,666.71kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002706s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system/page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000442s ]
+[ info ] [ RUN ] app\admin\Controller\System->page[ F:\WWW\qiye1\application\admin\controller\System.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\system\page.html [ array (
+  0 => 'left_nav',
+  1 => 'type_list',
+  2 => 'hide_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002594s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008678s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010669s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.011400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'System/page' LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.007943s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 0 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system_type` [ RunTime:0.076878s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system_type` [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 1 ORDER BY `id` ASC [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` WHERE  `status` = 1  AND `type_id` = 2 ORDER BY `id` ASC [ RunTime:0.000742s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:33+08:00 ] 127.0.0.1 GET qiye1.com/public///uploads/system/20190316/0858787576238f4b3aaf8ed7730b6b0c.gif
+[运行时间：0.034859s] [吞吐率：28.69req/s] [内存消耗：1,291.92kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002388s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/system/page.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/system/20190316/0858787576238f4b3aaf8ed7730b6b0c_gif' => '',
+  'uploads' => 'system',
+  0 => '0858787576238f4b3aaf8ed7730b6b0c.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:34+08:00 ] 127.0.0.1 GET qiye1.com/public///uploads/system/20190316/69e5114afc8c849d522f67afc77646d4.jpeg
+[运行时间：0.032637s] [吞吐率：30.64req/s] [内存消耗：1,291.92kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004141s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/system/page.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/system/20190316/69e5114afc8c849d522f67afc77646d4_jpeg' => '',
+  'uploads' => 'system',
+  0 => '69e5114afc8c849d522f67afc77646d4.jpeg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:37+08:00 ] 127.0.0.1 GET qiye1.com/admin/advert/lst.html
+[运行时间：0.126399s] [吞吐率：7.91req/s] [内存消耗：6,623.09kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003401s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'advert',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/advert/lst_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000499s ]
+[ info ] [ RUN ] app\admin\Controller\Advert->lst[ F:\WWW\qiye1\application\admin\controller\Advert.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\advert\lst.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+  2 => 'nums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011452s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.009218s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009819s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010481s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'Advert/lst' LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.009732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_advert` LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.017211s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:37+08:00 ] 127.0.0.1 GET qiye1.com/public///uploads/cate/20190313/c7f7d32861a9dc35760eb80ebb6f2336.jpg
+[运行时间：0.027028s] [吞吐率：37.00req/s] [内存消耗：1,291.92kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003118s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/advert/lst.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/cate/20190313/c7f7d32861a9dc35760eb80ebb6f2336_jpg' => '',
+  'uploads' => 'cate',
+  0 => 'c7f7d32861a9dc35760eb80ebb6f2336.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:37+08:00 ] 127.0.0.1 GET qiye1.com/public///uploads/cate/20190313/9ccfffbc02029cc21932535bd44d76e5.jpg
+[运行时间：0.028383s] [吞吐率：35.23req/s] [内存消耗：1,291.92kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004342s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/advert/lst.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/cate/20190313/9ccfffbc02029cc21932535bd44d76e5_jpg' => '',
+  'uploads' => 'cate',
+  0 => '9ccfffbc02029cc21932535bd44d76e5.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:38+08:00 ] 127.0.0.1 GET qiye1.com/public///uploads/cate/20190313/9ab79d7f9ab39cd647f00e02fdd347fa.jpg
+[运行时间：0.061986s] [吞吐率：16.13req/s] [内存消耗：1,291.92kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002216s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/advert/lst.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/cate/20190313/9ab79d7f9ab39cd647f00e02fdd347fa_jpg' => '',
+  'uploads' => 'cate',
+  0 => '9ab79d7f9ab39cd647f00e02fdd347fa.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:38+08:00 ] 127.0.0.1 GET qiye1.com/public///uploads/cate/20190313/e16fff2902239484dd3b1a0fa3089fe4.jpg
+[运行时间：0.026307s] [吞吐率：38.01req/s] [内存消耗：1,291.92kb] [文件加载：44]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003661s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/advert/lst.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/cate/20190313/e16fff2902239484dd3b1a0fa3089fe4_jpg' => '',
+  'uploads' => 'cate',
+  0 => 'e16fff2902239484dd3b1a0fa3089fe4.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-11T23:29:49+08:00 ] 127.0.0.1 GET qiye1.com/admin/cate/lst.html
+[运行时间：0.104880s] [吞吐率：9.53req/s] [内存消耗：6,628.96kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002539s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/cate/lst_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000468s ]
+[ info ] [ RUN ] app\admin\Controller\Cate->lst[ F:\WWW\qiye1\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\cate\lst.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+  2 => 'nums',
+  3 => 'cate_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003002s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010768s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'Cate/lst' LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.015462s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_cate` LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tp_cate` [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:29:53+08:00 ] 127.0.0.1 GET qiye1.com/admin/cate/add/pid/1.html
+[运行时间：0.136215s] [吞吐率：7.34req/s] [内存消耗：6,693.91kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002300s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/cate/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/cate/add/pid/1_html' => '',
+  'pid' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.001067s ]
+[ info ] [ RUN ] app\admin\Controller\Cate->add[ F:\WWW\qiye1\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\cate\add.html [ array (
+  0 => 'left_nav',
+  1 => 'cate_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011866s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.007536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010618s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010950s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.002421s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'Cate/add' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.010498s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tp_cate` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:30:00+08:00 ] 127.0.0.1 POST qiye1.com/admin/Cate/sortall.html
+[运行时间：0.101175s] [吞吐率：9.88req/s] [内存消耗：6,343.98kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003693s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cate',
+    2 => 'sortall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/cate/lst.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qiye1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '73',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cate/sortall_html' => '',
+  'sort' => 
+  array (
+    1 => '1',
+    2 => '50',
+    3 => '50',
+    4 => '50',
+    5 => '50',
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000448s ]
+[ info ] [ RUN ] app\admin\Controller\Cate->sortAll[ F:\WWW\qiye1\application\admin\controller\Cate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002659s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017142s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009834s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'Cate/sortall' LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.009119s ]
+[ sql ] [ SQL ] UPDATE `tp_cate`  SET `sort`=1  WHERE  `id` = 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] UPDATE `tp_cate`  SET `sort`=50  WHERE  `id` = 2 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] UPDATE `tp_cate`  SET `sort`=50  WHERE  `id` = 3 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] UPDATE `tp_cate`  SET `sort`=50  WHERE  `id` = 4 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] UPDATE `tp_cate`  SET `sort`=50  WHERE  `id` = 5 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:30:02+08:00 ] 127.0.0.1 GET qiye1.com/admin/cate/lst.html
+[运行时间：0.111153s] [吞吐率：9.00req/s] [内存消耗：6,480.06kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/cate/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/cate/lst_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000465s ]
+[ info ] [ RUN ] app\admin\Controller\Cate->lst[ F:\WWW\qiye1\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\cate\lst.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+  2 => 'nums',
+  3 => 'cate_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002310s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010440s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009986s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.001290s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'Cate/lst' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.010132s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_cate` LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tp_cate` [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:30:12+08:00 ] 127.0.0.1 GET qiye1.com/admin/cate/edit/id/1.html
+[运行时间：0.126231s] [吞吐率：7.92req/s] [内存消耗：6,645.38kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002180s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cate',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/cate/lst.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/cate/edit/id/1_html' => '',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000872s ]
+[ info ] [ RUN ] app\admin\Controller\Cate->edit[ F:\WWW\qiye1\application\admin\controller\Cate.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1/./application/admin\view\cate\edit.html [ array (
+  0 => 'left_nav',
+  1 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014310s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.008685s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` WHERE  `uid` = 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010040s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `tp_auth_group` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008893s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99,0)  AND `status` = 1  AND `types` >= 1 ORDER BY `sort` ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `title` FROM `tp_auth_rule` WHERE  `name` = 'Cate/edit' LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group_access` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (5,7,6,69,70,11,31,32,33,105,8,9,102,34,36,37,19,20,75,76,78,84,80,81,82,83,100,111,112,2,3,4,39,40,41,89,103,42,43,44,45,46,71,72,73,74,104,110,13,14,47,108,109,87,23,24,48,49,50,51,52,25,27,28,53,55,56,26,29,30,35,58,59,60,77,67,64,63,65,66,68,85,86,106,107,88,90,91,92,93,94,95,96,97,98,99)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.009773s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2019-04-11T23:30:12+08:00 ] 127.0.0.1 GET qiye1.com/public/
+[运行时间：0.120867s] [吞吐率：8.27req/s] [内存消耗：2,465.27kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002337s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-hk; PHPSESSID=i1uh1k6nkk0od13ug0448jvt71',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qiye1.com/admin/cate/edit/id/1.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'qiye1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\WWW\qiye1\public/../application/index\lang\zh-hk.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\WWW\qiye1\public/../application/index\lang\zh-hk.php
+[ info ] [ BEHAVIOR ] Run Closure @action_begin [ RunTime:0.000472s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\WWW\qiye1\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\WWW\qiye1\public/../application/index\view\index\index.html [ array (
+  0 => 'cate_list',
+  1 => 'sys_cate_list',
+  2 => 'config',
+  3 => 'advert_list',
+  4 => 'banner_list',
+  5 => 'list',
+  6 => 'c',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002824s ] mysql:host=127.0.0.1;dbname=yahoo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.009179s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 75  AND `status` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_system` [ RunTime:0.011357s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_visit_log` [ RunTime:0.009651s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '127.0.0.1'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1554995712 LIMIT 1 [ RunTime:0.002517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_system` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_visit_log` WHERE  `ip` = '127.0.0.1'  AND `type` = 'pc'  AND `client` = 'Chrome'  AND `time` > 1554995712 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort` ASC [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.012889s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `cate_id` IN (1,2,3,4,5)  AND `status` = 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_advert` [ RunTime:0.010948s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'banner' LIMIT 8 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_advert` WHERE  `type` = 'advert' LIMIT 5 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `cate_name` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000398s ]
+[ error ] [8]Undefined index: link[F:\WWW\qiye1\runtime\temp\70707e6714229a81489d3522f934cfae.php:95]

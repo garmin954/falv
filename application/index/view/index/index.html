@@ -1,0 +1,65 @@
+{extend name="template/base" /}
+{block name="content"}
+
+<div class="mainView" data-v-6aefcbd1>
+    <div class="bannerArea clear" data-v-6aefcbd1>
+        <div class="leftBanner" data-v-51af3139 data-v-6aefcbd1>
+            <ul class="leftUl" data-v-51af3139>
+                <li class="classfyOne" data-v-51af3139>
+                </li>
+                {volist name="category_art" id="top_cate"}
+                <li class="classfyOne" data-v-51af3139>
+                    <span data-v-51af3139>{$top_cate.cate_name}</span>
+                    <i data-v-51af3139>{$top_cate.sort_name}</i>
+                    <div class="showCase" data-v-51af3139>
+                        {volist name="$top_cate['son']" id="son_cate"}
+                        <div class="showCaseList clear" data-v-51af3139>
+                            <a href="{:url('/category/'.$son_cate['id'])}" target="_blank" class="txtline" data-v-51af3139>
+                                {$son_cate['cate_name']}
+                            </a>
+                            <div class="showCaseListDetail  clear" data-v-51af3139>
+
+                            {volist name="$son_cate['article']" id="article"}
+                                <a href="{:url('/info/'.$article['id'])}" target="_blank" data-v-51af3139><i>
+                                    {$article.sort_title}
+                                </i></a>
+                            {/volist}
+                            </div>
+
+                        </div>
+                        {/volist}
+                    </div>
+                </li>
+                {/volist}
+
+            </ul>
+        </div>
+
+
+        <div class="rightBanner" data-v-6aefcbd1>
+            <div id="scoll" class="scoll">
+                <div class="box1" id="box1">
+                    <ul id="list1" class="list">
+                        {volist name='$banner_list' id="advert"}
+                        <li class="li"><img src="PUBLIC{$advert.thumb}" alt=""></li>
+                        {/volist}
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{/block}
+{block name="script"}
+<script type="text/javascript" src="./STATIC/js/swiperdemo.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        $("#box1").swiper({ratio: 8 / 5, time: 4000, stop: true, direction: "left"});
+        $("#box").swiper({time: 2000, base: false, ratio: 290 / 163});
+    };
+</script>
+{/block}
