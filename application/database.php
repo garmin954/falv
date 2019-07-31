@@ -17,7 +17,7 @@ return [
     // 数据库名
 
     // 数据库名
-    'database'        => 'qiye1',
+    'database'        => 'falv',
     // 用户名
     'username'        => 'root',
     // 密码
