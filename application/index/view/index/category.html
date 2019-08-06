@@ -1,12 +1,14 @@
 {extend name="template/base" /}
 {block name="link"}
 <!--<link rel="stylesheet" href="STATIC/layui/css/layui.css"  media="all">-->
-<link type="text/css" rel="stylesheet" href="STATIC/css/all.css">
+<!--<link type="text/css" rel="stylesheet" href="STATIC/css/all.css">-->
 <script src="STATIC/layui/layui.js" defer></script>
-
 <style>
-   /*.realBorder{width: 100px!important;left: 100px!important;}*/
-   /* .kinerNav >li{border-bottom:  1px solid springgreen;margin: 0px 10px!important;}*/
+    a{    color: #86878a;}
+    a:hover{
+        color: #1972ea;
+    }
+    .active{color: #1972ea;}
 </style>
 
 {/block}
@@ -93,7 +95,7 @@
                 </div>
             </div>
             <div class="listResult" data-v-c912f7ee="">
-<!--                <div class="sortButton" data-v-c912f7ee=""><span class="borderBtn" data-v-c912f7ee="">最新商品-->
+                <div class="sortButton" data-v-c912f7ee=""><span class="borderBtn" data-v-c912f7ee="">最新商品
           <b class="icoImg" data-v-c912f7ee=""><i class="blue" data-v-c912f7ee=""></i>
               <i class="gray"  data-v-c912f7ee=""></i></b></span>
                     </div>
@@ -119,57 +121,106 @@
             </div>
         </div>
     </div>
-    <div class="el-card box-card is-always-shadow" data-v-c912f7ee=""><!---->
+    <style>
+        .yl-class a{    display: block;}
+        .box-card[data-v-227992bb] {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .yl-class .article .title[data-v-227992bb] {
+            color: #333;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 20px 0;
+            font-weight: 700;
+            text-align: left;
+             height: 25px;
+        }
+        .yl-class .article .desc[data-v-227992bb] {
+            font-size: 14px;
+            color: #666;
+            line-height: 15px;
+            height: 20px;
+            margin-bottom: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+        .yl-class .article .title span[data-v-227992bb] {
+            float: right;
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+        }
+        .yl-class .article[data-v-227992bb] {
+            border-bottom: 1px solid #ddd;
+        }
+         .el-card__body {
+            padding: 20px;
+        }
+    </style>
+    <div class="el-card box-card yl-class is-always-shadow" data-v-227992bb="">
+        <div class="el-card__header">
+            <div data-v-227992bb="">小微资讯</div>
+        </div>
         <div class="el-card__body">
-            <ul class="kinerNav">
-                <li class="active">办理条件</li>
-                <li>办理资料</li>
+            <div class="article" data-v-227992bb="">
+                <a href="" target="_black" class="title" data-v-227992bb="">工商登记续期截止日延长
+                    <span data-v-227992bb="">2019-08-01 18:26:15</span>
+                </a>
+                <a href="htt" target="_black" class="desc" data-v-227992bb="">阿《阿新社》7月28为《进口商：工商登记续期截止日期延长至10月15日》的报道，全文摘编如下：</a>
+            </div>
+            <div class="article" data-v-227992bb="">
+                <a href="" target="_black" class="title" data-v-227992bb="">工商登记续期截止日延长
+                    <span data-v-227992bb="">2019-08-01 18:26:15</span>
+                </a>
+                <a href="htt" target="_black" class="desc" data-v-227992bb="">阿《阿新社》7月28为《进口商：工商登记续期截止日期延长至10月15日》的报道，全文摘编如下：</a>
+            </div>
 
-            </ul>
 
-            <div class="box">
-                <div class="kinerContent">
-                    <div class="wrapper">
-                        <div class="kinerItem">
-                            {$current.content}
-                        </div>
-                        <div class="kinerItem">
-                            {$current.content1}
-                        </div>
-
-                    </div>
-                </div>
-
+            <div class="el-pagination" data-v-227992bb="">
+                <button type="button" disabled="disabled" class="btn-prev">
+                    <i class="el-icon el-icon-arrow-left"></i></button>
+                <ul class="el-pager"><li class="number active">1</li>
+                </ul>
+                <button type="button" disabled="disabled" class="btn-next">
+                    <i class="el-icon el-icon-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
+
 
 </div>
 
 
 {/block}
+<!--<script src="VENDOR/vue.js"></script>-->
+<!--<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>-->
+<!--<link rel="stylesheet" href="VENDOR/element-ui/lib/theme-chalk/index.css">-->
+<!--<script src="VENDOR/element-ui/lib/index.js"></script>-->
 {block name="script"}
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="STATIC/js/kiner-swiper-panel.min.js"></script>
-<script type="text/javascript">
 
-</script>
+<script>
 
-<script type="text/javascript">
 
-    $("#wholeClass").mouseover(function () {
-        $(".wholeClass").addClass('allHover');
-        $(".leftBannerFrame").addClass('isleftBanner');
-    });
-    var target ='';
-    $(document).bind('mouseover', function (e) {
-        target = $(e.target);
 
-        if(target.closest("#leftBannerFrame").length == 0 && target.closest("#wholeClass").length == 0)
-        {
-            $(".leftBannerFrame").removeClass('isleftBanner');
+    new Vue({
+        el:"#apps",
+        data: {
+            activeName: 'first'
+        },
+        methods: {
+            handleClick(tab, event) {
+                console.log(tab, event);
+            }
         }
     })
-
+    //
+</script>
+<script type="text/javascript">
 
 </script>
 

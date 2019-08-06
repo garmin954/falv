@@ -222,6 +222,84 @@ function getChildren($data,$pid,$level=0)
     }
     return $result;
 }
+
+
+function cateTree2($dbname,$pid=0,$type=false)
+{
+    if($type){
+        $data = db($dbname)->field('id,pid')->select();
+        return array_merge(getChildren($data,$pid),[['id'=>&$pid]]);
+    }else{
+        $data = db($dbname)->select();
+        return getChildren2($data,$pid);
+    }
+}
+
+
+function getChildren2($data,$pid,$level=0)
+{
+    static $result2 = array();
+    foreach ($data as $key=>$val){
+        if($pid == $val['pid']){
+            $val['level']     = $level;
+            $result2[$key]     = $val;
+            getChildren2($data,$val['id'],$level+1);
+        }
+    }
+    return $result2;
+}
+
+
+function cateTree3($dbname,$pid=0,$type=false)
+{
+    if($type){
+        $data = db($dbname)->field('id,pid')->select();
+        return array_merge(getChildren($data,$pid),[['id'=>&$pid]]);
+    }else{
+        $data = db($dbname)->select();
+        return getChildren3($data,$pid);
+    }
+}
+
+
+function getChildren3($data,$pid,$level=0)
+{
+    static $result3 = array();
+    foreach ($data as $key=>$val){
+        if($pid == $val['pid']){
+            $val['level']     = $level;
+            $result3[$key]     = $val;
+            getChildren3($data,$val['id'],$level+1);
+        }
+    }
+    return $result3;
+}
+
+
+function cateTree4($dbname,$pid=0,$type=false)
+{
+    if($type){
+        $data = db($dbname)->field('id,pid')->select();
+        return array_merge(getChildren($data,$pid),[['id'=>&$pid]]);
+    }else{
+        $data = db($dbname)->select();
+        return getChildren4($data,$pid);
+    }
+}
+
+
+function getChildren4($data,$pid,$level=0)
+{
+    static $result4 = array();
+    foreach ($data as $key=>$val){
+        if($pid == $val['pid']){
+            $val['level']     = $level;
+            $result4[$key]     = $val;
+            getChildren4($data,$val['id'],$level+1);
+        }
+    }
+    return $result4;
+}
 function getSonMax($db,$id)
 {
     $pid = db($db)->where('id',$id)->value('pid');

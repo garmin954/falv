@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$pinfo['cate_name']}</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <link href="STATIC/css/indexs.css" type="text/css"  rel="stylesheet"/>
+    <link href="STATIC/css/zixun.css" type="text/css"  rel="stylesheet"/>
+    <script type="text/javascript" src="STATIC/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="STATIC/js/return-top.js"></script>
+
+</head>
+<body>
+<div id="continer">
+    <!-- 顶部信息条 -->
+    <!-- logo区域 -->
+    <div class="logo-box">
+        <a href="/" class="logo"></a>
+        <span class="order-info">小微知识库</span>
+        <div class="ad-box">
+            <ul>
+                <li class="ico1">价格透明</li>
+                <li class="ico2">信息保密</li>
+                <li class="ico3">进度掌控</li>
+                <li class="ico4">售后无忧</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="zx-nav">
+        <div class="nav-main">
+            <p class="navm"><a href="/">首页</a></p>
+
+            {volist name ="topNav" id='topNavs'}
+            <p class="navm {if $active == $topNavs['id']}selected{/if}"><a href="{:url('/categoryNews/'.$topNavs['id'])}">{$topNavs.cate_name}</a></p>
+            {/volist}
+
+        </div>
+    </div>    <div class="ejnav">
+    <div class="enav">
+        <ul>
+
+            {volist name="cateSon" id="cateSons"}
+            <li><a href="{:url('/cateSon/'.$cateSons['id'])}" >{$cateSons.cate_name}</a></li>
+            {/volist}
+
+        </ul>
+    </div>
+</div>
+
+    <div class="zx-list">
+        <div class="crumbs">
+            <a class="crumb-link" href="/">首页</a>
+            <i class="crumb-line">&gt;</i>
+            <a class="crumb-link" href="{:url('/categoryNews/'.$pinfo['id'])}">{$pinfo.cate_name}</a>
+        </div>
+        <div class="left-listbox">
+            {volist name="cateSon" id="cateSons"}
+
+            <div class="box">
+                <p class="title">
+                    <span>{$cateSons.cate_name}</span>
+                    <a class="more" href="{:url('/cateSon/'.$cateSons['id'])}">更多</a>
+                </p>
+                {if isset($cateSons['article'][0]['id'])}
+                <div class="con">
+                    <div class="pic"><a href="/">
+
+                        <img src="/imgurl/zixun/39025676850945"><!-- 默认图片 -->
+
+                    </a></div>
+                    <div class="text-box">
+                        <p class="name">
+                            <a href="{:url('/articleInfo/'.$cateSons['article'][0]['id'])}" class="link">{$cateSons['article'][0]['title']}</a>
+                            <span>{$cateSons['article'][0]['create_time']|date="Y-m-d H:i:s",###}<a class="num">阅读(<i>{$cateSons['article'][0]['look']}</i>)</a></span></p>
+                        <p class="text"> {$cateSons['article'][0]['desc']}</p>
+                    </div>
+                </div>
+                {/if}
+                <div class="list">
+                    <ul>
+                        {volist name="cateSons['article']" id="lists"}
+                        <li>
+                            <a class="link" href="{:url('/articleInfo/'.$lists['id'])}" target="_blank">{$lists['title']}  </a>
+                        </li>
+                        {/volist}
+
+                    </ul>
+                </div>
+            </div>
+            {/volist}
+
+
+
+        </div>
+
+
+        <div class="right-listbox">
+            <div class="box">
+                <p class="title">推荐阅读</p>
+                <div class="list">
+                    <ul>
+
+                        {volist name='hotArticle' id="hotArticles"}
+                        <li>
+                            <label {if $i<= 3}class="list-green"{else/}class="list-gray"{/if}>{$i}</label>
+                            <span>
+                            <a class="link" href="{:url('/articleInfo/'.$hotArticles['id'])}">{$hotArticles.title}</a>
+                            </span>
+                        </li>
+                        {/volist}
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 网站底部 -->
+    <div class="bot-main">
+        <div class="bot-bg">
+            <div class="bot-box">
+                <div class="text">©lvzheng.com 2014-2016 京ICP备15002212号-1</div>
+            </div>
+        </div>
+    </div>
+    <span style="display:none">
+
+
+</span>
+    <!-- 火箭返回顶部 -->
+    <div id="rocket-to-top">
+        <div class="level-2"></div>
+        <div class="level-3"></div>
+    </div>
+
+</div>
+</body>
+
+</html>

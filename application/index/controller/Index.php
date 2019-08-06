@@ -32,15 +32,38 @@ class Index extends controller\Base
             $val = str_replace('\\','/',$val);
         }
 
+
+        //zixun
+        $zxlist = db('advisory_cate') -> where('pid', 0) -> limit(4) -> order('sort asc') -> select();
+        foreach ($zxlist as $key =>&$val){
+            if($key == 0){
+                $res = cateTree('advisory_cate', $val['id']);
+            }elseif ($key == 1){
+                $res = cateTree2('advisory_cate', $val['id']);
+
+            }elseif ($key == 2){
+                $res = cateTree3('advisory_cate', $val['id']);
+
+            }elseif ($key == 3){
+                $res = cateTree4('advisory_cate', $val['id']);
+
+            }
+            $_ids = [];
+            foreach ($res as $vs){
+                array_push($_ids, $vs['id']);
+            }
+            $val['ids'] = $_ids;
+        }
+        foreach ($zxlist as &$val){
+            $val['article'] = db('advisory_article') -> where('pid','in', $val['ids']) -> limit('6') -> select();
+        }
         $this->assign([
             'advert_list' =>$advert_list,
             'banner_list' =>$banner_list,
-
-
             'anli_list'=> $anli_list,
-              'news_list'=> $news_list,
-
+            'news_list'=> $news_list,
             'current'   => '999',
+            'xlist'   => $zxlist
 
         ]);
         return view();

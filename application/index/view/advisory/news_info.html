@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$info.title}</title>
+    <meta name="description" content=" "/>
+    <meta name="keywords" content=" " />
+    <link href="STATIC/css/indexs.css" type="text/css"  rel="stylesheet"/>
+    <link href="STATIC/css/zixun.css" type="text/css"  rel="stylesheet"/>
+    <script type="text/javascript" src="STATIC/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="STATIC/js/return-top.js"></script>
+
+</head>
+<body>
+<div id="continer">
+    <!-- 顶部信息条 -->
+    <!-- logo区域 -->
+    <div class="logo-box">
+        <a href="/" class="logo"></a>
+        <span class="order-info">小微知识库</span>
+        <div class="ad-box">
+            <ul>
+                <li class="ico1">价格透明</li>
+                <li class="ico2">信息保密</li>
+                <li class="ico3">进度掌控</li>
+                <li class="ico4">售后无忧</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="zx-nav">
+        <div class="nav-main">
+            <p class="navm"><a href="/">首页</a></p>
+
+            {volist name ="topNav" id='topNavs'}
+            <p class="navm {if $active == $topNavs['id']}selected{/if}"><a href="{:url('/categoryNews/'.$topNavs['id'])}">{$topNavs.cate_name}</a></p>
+            {/volist}
+
+        </div>
+    </div>    <div class="ejnav">
+    <div class="enav">
+        <ul>
+            {volist name="pson" id="psons"}
+            <li><a href="{:url('/cateSon/'.$psons['id'])}" {if $psons['id'] == $pinfo['id']}  class="on" {/if}>{$psons.cate_name}</a></li>
+            {/volist}
+        </ul>
+    </div>
+</div>
+
+    <div class="zx-list">
+        <div class="crumbs">
+            <a class="crumb-link" href="/">首页</a>
+            <i class="crumb-line">></i>
+            <a class="crumb-link" href="{:url('/categoryNews/'.$topinfo['id'])}">{$topinfo['cate_name']}</a>
+            <i class="crumb-line">></i>
+            <a class="crumb-link" href="{:url('/cateSon/'.$pinfo['id'])}">{$pinfo['cate_name']}</a>
+            <i class="crumb-line">></i>
+            <a class="crumb-link" href="javascript:;">{$info['title']}</a>
+        </div>
+        <div class="left-listbox">
+            <!-- 分享按钮 -->
+            <div class="jiathis_style_24x24">
+                <a class="jiathis_button_qzone"></a>
+                <a class="jiathis_button_tsina"></a>
+                <a class="jiathis_button_tqq"></a>
+                <a class="jiathis_button_weixin"></a>
+                <a class="jiathis_button_renren"></a>
+                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                <a class="jiathis_counter_style"></a>
+            </div>
+            <script type="text/javascript" src="STATIC/js/jia.js" charset="utf-8"></script>
+            <!-- 分享按钮 -->
+            <div class="detail-con">
+                <div class="title"><h1>{$info.title}</h1></div>
+                <div class="info">
+                    <span>作者：{$info.author}</span>
+                    <span>时间：{$info.create_time|date="Y-m-d H:i:s", ###}</span>
+                    <span>阅读：<b>{$info.look}</b></span>
+                </div>
+                <div>
+                    <p style="line-height: 3em;">
+                        {$info.content}
+                     </p>
+                </div>
+                <div class="blog-menu">
+                    <ul>
+                        {if $prev}
+                        <li>上一篇：
+                            <a href="{:url('/articleInfo/'.$prev['id'])}">{$prev.title}</a>
+                        </li>
+                        {/if}
+
+                        {if $last}
+                        <li>下一篇：
+                            <a href="{:url('/articleInfo/'.$last['id'])}">{$last.title}</a>
+                        </li>
+                        {/if}
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="other-info">
+                <div class="title">相关阅读</div>
+                <ul>
+
+                    {volist name='related' id='relateds'}
+                    <li>
+                        <a class="link" href="{:url('/articleInfo/'.$relateds['id'])}"> {$relateds.title}</a>
+                    </li>
+                    {/volist}
+
+                </ul>
+            </div>        </div>
+
+        <div class="right-listbox">
+            <div class="box">
+                <p class="title">推荐阅读</p>
+                <div class="list">
+                    <ul>
+
+                        {volist name='hotArticle' id="hotArticles"}
+                        <li>
+                            <label {if $i<= 3}class="list-green"{else/}class="list-gray"{/if}>{$i}</label>
+                            <span>
+                            <a class="link" href="{:url('/articleInfo/'.$hotArticles['id'])}">{$hotArticles.title}</a>
+                            </span>
+                        </li>
+                        {/volist}
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- 网站底部 -->
+    <div class="bot-main">
+        <div class="bot-bg">
+            <div class="bot-box">
+                <div class="text">©lvzheng.com 2014-2016 京ICP备15002212号-1</div>
+            </div>
+        </div>
+    </div>
+    <span style="display:none">
+
+
+</span>
+    <!-- 火箭返回顶部 -->
+    <div id="rocket-to-top">
+        <div class="level-2"></div>
+        <div class="level-3"></div>
+    </div>
+
+</div>
+</body>
+
+</html>

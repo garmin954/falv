@@ -95,10 +95,17 @@
     }
 
     /*用户-删除*/
-    function member_del(obj, id) {
+    function member_del(obj, id, urls='') {
         layer.confirm('确认要删除吗？', function (index) {
             //发异步删除数据
-            $.post("{:url('admin/"+url+"/del')}", {'id': id}, function (data) {
+            if(urls == ''){
+                var u = "{:url('admin/"+url+"/del')}";
+            }else{
+                var u = urls;
+
+            }
+
+            $.post(u, {'id': id}, function (data) {
                 if(data.code == 0){
                     layer.msg("没有权限操作！",{icon:5,shade:0.5,time:2000})
                 }

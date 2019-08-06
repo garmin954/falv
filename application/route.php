@@ -31,3 +31,22 @@ Route::rule('wcategory','index/wap/category');
 
 Route::rule('warticle/:id','index/wap/info');
 Route::rule('warticle','index/wap/info');
+
+Route::rule('categoryNews/:id','index/advisory/categoryNews');
+Route::rule('categoryNews','index/advisory/categoryNews');
+
+Route::rule('cateArticle/:id','index/advisory/cateArticle');
+Route::rule('cateArticle','index/advisory/cateArticle');
+
+Route::rule('articleInfo/:id','index/advisory/articleInfo');
+Route::rule('articleInfo','index/advisory/articleInfo');
+
+//----------------
+Route::rule('categoryNews/:id','index/advisory/categoryNews');
+Route::rule('categoryNews','index/advisory/categoryNews');
+
+Route::rule('cateSon/:id','index/advisory/cateSon');
+Route::rule('cateSon','index/advisory/cateSon');
+
+
+Route::rule('addArticle','admin/advisory/addArticle');

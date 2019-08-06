@@ -1,0 +1,104 @@
+{extend name="template/template" /}
+
+{block name="body"}
+    <div class="x-body" style="padding-top: 0px">
+        <form class="layui-form">
+
+
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title" style="margin-bottom: 20px">
+                    <li class="layui-this">基本设置</li>
+
+                </ul>
+                <div class="layui-tab-content " >
+                    <div class="layui-tab-item layui-show">
+
+                        <div class="layui-form-item">
+                            <label   class="layui-form-label">
+                                <span class="x-red">*</span>栏目名称
+                            </label>
+                            <div class="layui-input-inline">
+                                <input type="text" id="cname" name="cate_name" required="" lay-verify="required" value=""
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">
+                                <span class="x-red">*</span>必填
+                            </div>
+                        </div>
+<!--                        <div class="layui-form-item">-->
+<!--                            <label   class="layui-form-label">-->
+<!--                                <span class="x-red"></span>栏目简序-->
+<!--                            </label>-->
+<!--                            <div class="layui-input-inline">-->
+<!--                                <input type="text" name="sort_name" required=""  class="layui-input">-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+
+                        <div class="layui-form-item">
+                            <label  class="layui-form-label">
+                                <span class="x-red">*</span>上级栏目
+                            </label>
+                            <div class="layui-input-inline">
+                                <select name="pid" >
+
+                                    <option value="0">顶级栏目</option>
+                                    {volist name=":cateTree('advisory_cate')" id="cl"}
+
+
+                                    <option value="{$cl.id}"  {if condition="$cl['id'] eq $Request.param.pid"}selected{/if}>{:str_repeat("-----|",$cl['level'])}{$cl.cate_name}  </option>
+                                    {/volist}
+                                </select>
+
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">
+                                <span class="x-red">*</span>
+                            </div>
+                        </div>
+
+<!--                         <div class="layui-form-item">-->
+<!--                            <label class="layui-form-label">栏目图片 </label>-->
+<!--                            <div class="layui-input-block">-->
+
+<!--                                <div class="layui-upload" >-->
+<!--                                        <div id="queue"></div>-->
+<!--                                        <button  id="file_upload" type="button" class="layui-btn" ><i class="layui-icon"></i>上传文件</button>-->
+<!--                                        <button id="back_out"  type="button" class="layui-btn layui-btn-danger">撤销上传</button>-->
+<!--                                        <br><img id="show_img" height="120px" src=" "  alt="上传的图片" style="display: none ;margin-top: 5px" >-->
+<!--                                    <input type="hidden" name="thumb" value="">-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">是否开启：</label>
+                            <div class="layui-input-block" style="width: 50px">
+                                <input type="checkbox"  name="status" lay-skin="switch" value="1" lay-text="开启|关闭" checked="checked">
+                                <div id="checks" class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>开启</em><i></i></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+          <div class="layui-form-item">
+              <label   class="layui-form-label">
+              </label>
+              <button id="btn"  type="button" class="layui-btn" lay-filter="add"  >
+                  增加
+              </button>
+          </div>
+      </form>
+    </div>
+
+{/block}
+{block name="js"}
+{include file="template/publish"}
+{/block}
