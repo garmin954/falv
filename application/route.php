@@ -50,3 +50,6 @@ Route::rule('cateSon','index/advisory/cateSon');
 
 
 Route::rule('addArticle','admin/advisory/addArticle');
+
+Route::rule('advisory/:id','index/index/advisory');
+Route::rule('advisory','index/index/advisory');

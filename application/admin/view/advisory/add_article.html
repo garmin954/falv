@@ -51,15 +51,22 @@
                     </div>
                     <div class="layui-form-item">
                         <label  class="layui-form-label">
-                            所属栏目
+                            所属栏目{$Request.param.cate_id}
                         </label>
                         <div class="layui-input-inline">
-                            <select name="pid" >
+                            <select {if $Request.param.cate_id != 999}name="pid"{else/}name="cpid"{/if} lay-search="">
 
+                                {if $Request.param.cate_id != 999}
                                 {volist name=":cateTree('advisory_cate')" id="cl"}
                                 <?php echo str_repeat("-----|",$cl['level']); ?>
                                 <option {if condition="$cl['id'] eq $Request.param.cate_id"}selected{/if} value="{$cl.id}">{$cl.cate_name}</option>
                                 {/volist}
+                                {else/}
+                                {volist name=":cateTree('cate')" id="cl"}
+                                <?php echo str_repeat("-----|",$cl['level']); ?>
+                                <option {if condition="$cl['id'] eq $Request.param.cate_id"}selected{/if} value="{$cl.id}">{$cl.cate_name}</option>
+                                {/volist}
+                                {/if}
                             </select>
 
                         </div>

@@ -192,4 +192,10 @@ class Index extends controller\Base
         }
     }
 
+
+    public function advisory()
+    {
+
+        return view();
+    }
 }

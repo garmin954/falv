@@ -33,9 +33,10 @@
 
             <th style="width: 5%;">ID</th>
             <th style="width: 10%;">文章名称</th>
+            <th style="width: 10%;">发布时间</th>
+
             <th style="width: 10%;">上级栏目</th>
 
-            <th style="width: 10%;">发布时间</th>
             <th style="width: 10%;">操作</th>
 
         </thead>
@@ -50,10 +51,16 @@
             <td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
 
             <td>
-
+                {if $Request.param.cate_id != 999}
                 {volist name=":cateTree('advisory_cate')" id="v"}
                 {if condition="$vo.pid eq $v.id"}{$v.cate_name}{/if}
                 {/volist}
+
+                {else/}
+                {volist name=":cateTree('cate')" id="v"}
+                {if condition="$vo.pid eq $v.id"}{$v.cate_name}{/if}
+                {/volist}
+                {/if}
                 {if condition="$vo.pid eq 0"}顶级栏目{/if}
             </td>
 

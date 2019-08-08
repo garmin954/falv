@@ -57,16 +57,27 @@ class Advisory extends Base
         //获取列表
         $lists = cateTree('advisory_article');
 
-        $son = cateTree('advisory_cate', request()->param('cate_id'));
+        if(request()->param('cate_id') !== '999'){
+            $son = cateTree('advisory_cate', request()->param('cate_id'));
+        }else{
+            $son = cateTree('cate', 0);
+        }
 
         $sonId = [request()->param('cate_id')];
 
         foreach ($son as $val){
             array_push($sonId, $val['id']);
         }
-        $where = [
-            'pid'   => ['in', $sonId]
-        ];
+        if(request()->param('cate_id') !== '999') {
+
+            $where = [
+                'pid' => ['in', $sonId]
+            ];
+        }else{
+            $where = [
+                'cpid' => ['in', $sonId]
+            ];
+        }
 
         $nums = db('advisory_article') -> where($where)-> count();
         $cate_list = db('advisory_article') -> where($where)-> select();
@@ -93,8 +104,14 @@ class Advisory extends Base
                 'author' => $param['author'],
                 'create_time' => time(),
                 'look' => $param['look'],
-                'pid' => $param['pid'],
+
             ];
+
+            if(isset($param['pid'])){
+                $data['pid'] = $param['pid'];
+            }else{
+                $data['cpid'] = $param['cpid'];
+            }
 
             $res =  db('advisory_article') -> insert($data);
 
